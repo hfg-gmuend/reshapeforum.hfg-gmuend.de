@@ -3,7 +3,6 @@
 This is the public website for the reshape symposium (aka KITeGG summer school) taking place 10-12 May 2023 at the HfG Schwäbisch Gmünd!
 
 https://reshapeforum.hfg-gmuend.de
-https://reshapeforum.de
 
 This website was built with Sveltekit and deployed with Vercel.
 
