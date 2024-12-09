@@ -29,10 +29,11 @@
 	}
 
 	const menuItems = [
-		{ title: 'Programme', link: 'program' },
-		{ title: 'Registration', link: 'anmeldung' },
-		{ title: 'AI+D Lab', link: 'ai-d-lab' },
-		{ title: 'KITeGG', link: 'kitegg' }
+		{ title: 'Programme', link: '#program' },
+		{ title: 'Registration', link: '#anmeldung' },
+		{ title: 'AI+D Lab', link: '#ai-d-lab' },
+		//{ title: 'KITeGG', link: '#kitegg' },
+		{ title: 'Reshape 2023', link: 'https://reshapeforum.hfg-gmuend.de/2023/' }
 	];
 </script>
 
