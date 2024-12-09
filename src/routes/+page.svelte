@@ -43,7 +43,7 @@
 		<ul class="h-full flex flex-col pt-[80px]">
 			{#each menuItems as item}
 				<li class="basis-[95px]" on:click={() => (menuOpen = false)}>
-					<a href="#{item.link}" on:click|preventDefault={scrollIntoView}>{item.title}</a>
+					<a href="{item.link}" on:click|preventDefault={scrollIntoView}>{item.title}</a>
 				</li>
 			{/each}
 		</ul>
@@ -58,11 +58,11 @@
 	<nav class="font-light w-full max-md:hidden">
 		<ul class="flex justify-between">
 			{#each menuItems.slice(0, Math.floor(menuItems.length / 2)) as item}
-				<li><a href="#{item.link}" on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
+				<li><a href="{item.link}" on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
 			{/each}
 			<li><a href="#" class="font-medium">reshape</a></li>
 			{#each menuItems.slice(Math.floor(menuItems.length / 2)) as item}
-				<li><a href="#{item.link}" on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
+				<li><a href="{item.link}" on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
 			{/each}
 		</ul>
 	</nav>
