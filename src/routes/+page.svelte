@@ -87,8 +87,8 @@
 				<div class="inset pb-[24px] flex items-end justify-between">
 					<div>
 						<span class="block md:text-[64px] md:leading-[4rem]"
-							>10.-<br />
-							12.5.23</span
+							>14.-<br />
+							16.5.25</span
 						>
 						<span class="reshape-copy">Hochschule für Gestaltung <br />Schwäbisch Gmünd</span>
 					</div>
