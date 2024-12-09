@@ -1,6 +1,6 @@
 # reshape - Forum for Artificial Intelligence in Art and Design
 
-This is the public website for the reshape symposium (aka KITeGG summer school) taking place 10-12 May 2023 at the HfG Schwäbisch Gmünd!
+This is the public website for the reshape symposium (aka KITeGG summer school) taking place  Mi 14.5 — Fr 16.5 2025 at the HfG Schwäbisch Gmünd!
 
 https://reshapeforum.hfg-gmuend.de
 
