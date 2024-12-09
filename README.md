@@ -4,6 +4,8 @@ This is the public website for the reshape symposium (aka KITeGG summer school) 
 
 https://reshapeforum.hfg-gmuend.de
 
+Not in use: https://reshape-website.vercel.app
+
 This website was built with Sveltekit and deployed with Vercel.
 
 ## How to run this website locally
