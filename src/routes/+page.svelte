@@ -89,7 +89,10 @@
 				<div class="inset pb-[24px] flex items-end justify-between">
 					<div>
 						<span class="block md:text-[64px] md:leading-[4rem]"
-							>14.-<br />
+							><span class="md:text-[32px] md:leading-[4rem]"
+							>upcoming:</span
+							><br />
+							14.-<br />
 							16.5.25</span
 						>
 						<span class="reshape-copy">Hochschule für Gestaltung <br />Schwäbisch Gmünd</span>
