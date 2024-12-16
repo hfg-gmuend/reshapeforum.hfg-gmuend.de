@@ -74,13 +74,13 @@ body {
 }
 
 .reshape-gradient-bg {
-	background: linear-gradient(
+	/* background: linear-gradient(
 		to right,
 		#cd9bff 0%,
 		white 20px,
 		white calc(100% - 20px),
 		#cd9bff 100%
-	);
+	); */
 }
 
 @responsive {

@@ -52,9 +52,7 @@
 {/if}
 
 <header
-	class="fixed w-full z-30 inset border-y-2 border-black h-11 flex items-center reshape-lead-light"
-	class:bg-white={!menuOpen}
-	class:bg-reshape-mauve={menuOpen}
+	class="fixed w-full z-30 inset border-y-2 border-black h-11 flex items-center bg-black text-white"
 >
 	<nav class="font-light w-full max-md:hidden">
 		<ul class="flex justify-between">
@@ -97,7 +95,12 @@
 						>
 						<span class="reshape-copy">Hochschule für Gestaltung <br />Schwäbisch Gmünd</span>
 					</div>
-					<LabLogo />
+					<div class="w-28 md:w-40">
+						<a href="https://aid-lab.hfg-gmuend.de/" target="_blank" rel="noopener noreferrer"
+							>
+						<LabLogo />
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="absolute top-0 left-0 bottom-0 right-0">

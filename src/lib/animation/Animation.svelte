@@ -16,7 +16,7 @@
 	let blur = 1.5;
 
 	let colorOuter = '#B468FF';
-	let colorInner = '#fff';
+	let colorInner = '#B468FF';
 	let colorBackground = '#fff0';
 
 	// colors for the scale. needed to add a color between green and blue to make the morphing nicer
@@ -174,7 +174,7 @@
 
 	<rect id="gridBackground" {width} {height} fill={colorBackground} />
 
-	<g id="grid" fill={colorInner} filter="url(#blurMe)" mask="url(#gridMask)">
+	<g id="grid" fill={colorOuter} filter="url(#blurMe)" mask="url(#gridMask)">
 		<rect id="gridColor" {width} {height} fill={colorOuter} />
 		<g>
 			<use href="#gridSymbol" />
