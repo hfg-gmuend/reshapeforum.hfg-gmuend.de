@@ -76,10 +76,10 @@ body {
 .reshape-gradient-bg {
 	background: linear-gradient(
 		to right,
-		#acacff 0%,
+		#cd9bff 0%,
 		white 20px,
 		white calc(100% - 20px),
-		#acacff 100%
+		#cd9bff 100%
 	);
 }
 
