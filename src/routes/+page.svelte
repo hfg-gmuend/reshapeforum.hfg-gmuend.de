@@ -234,7 +234,7 @@
 	}
 
 	.animation-fallback-gif {
-		background-image: url('$lib/assets/animation-20fps-loop.gif');
+		background-image: url('$lib/assets/static-back.png');
 	}
 
 	.big-link {
