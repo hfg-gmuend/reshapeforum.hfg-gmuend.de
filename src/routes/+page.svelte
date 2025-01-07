@@ -110,7 +110,7 @@
 					<div class="-ml-[50%]">
 						<h1 class="z-20 reshape-title">reshape</h1>
 						<h2 class="z-20 reshape-subtitle">
-							Forum for<br />Artificial Intelligence<br />in Art and Design
+							Forum for Artificial Intelligence<br />in Art and Design
 						</h2>
 					</div>
 				</div>
@@ -195,13 +195,21 @@
 	.reshape-title {
 		position: relative;
 		font-size: 55px;
+		background: #ECE76F;
+		padding: 0.5em;
+		border-radius:0.5em;
+		display:inline-flex;
+		padding-top: 0.1em;
+		padding-bottom: 0.2em;
 	}
 
 	.reshape-subtitle {
 		position: relative;
 		font-size: 16px;
 		line-height: 19px;
-		font-weight: 300;
+		font-weight: 500;
+		margin-top: 1em;
+    	margin-left: 2em;
 	}
 
 	@media (min-width: 768px) {
@@ -214,7 +222,7 @@
 		.reshape-subtitle {
 			font-size: 20px;
 			line-height: 23px;
-			font-weight: 400;
+			font-weight: 500;
 		}
 	}
 
