@@ -2,7 +2,7 @@
 	import logoBmbf from '$lib/assets/logos/logo-bmbf.png';
 	import logoBw from '$lib/assets/logos/logo-bw.png';
 	import logoHfG from '$lib/assets/logos/logo-hfg.svg';
-	import logoAiD from '$lib/assets/logos/logo-ai-d.png';
+	import logoAiD from '$lib/assets/logos/lab-logo-full.png';
 </script>
 
 <div class="grid grid-cols-3 gap-3 md:h-16 md:flex md:justify-evenly">
