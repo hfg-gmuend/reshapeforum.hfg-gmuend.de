@@ -25,7 +25,8 @@
 		'#5C67AD',
 		'#ECE76F',
 		'#F19645',
-		'#E98AB7'
+		'#E98AB7',
+		'#6D59A2'
 	];
 	let colorScale = chroma
 		.scale(colors)
