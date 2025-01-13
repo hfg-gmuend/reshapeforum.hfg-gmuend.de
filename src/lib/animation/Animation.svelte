@@ -21,17 +21,11 @@
 
 	// colors for the scale. needed to add a color between green and blue to make the morphing nicer
 	let colors = [
-		'#B468FF',
-		'#B468FF',
-		'#3636FF',
-		'#3636FF',
-		'#548ABA',
-		'#8CCE00',
-		'#8CCE00',
-		'#548ABA',
-		'#3636FF',
-		'#3636FF',
-		'#B468FF'
+		'#6D59A2',
+		'#5C67AD',
+		'#ECE76F',
+		'#F19645',
+		'#E98AB7'
 	];
 	let colorScale = chroma
 		.scale(colors)
