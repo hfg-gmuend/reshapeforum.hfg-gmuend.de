@@ -145,9 +145,9 @@
 				>
 				<a
 					class="reshape-link"
-					href="https://twitter.com/gestaltungai"
+					href="https://sigmoid.social/@gestaltungai"
 					target="_blank"
-					rel="noopener noreferrer">Twitter</a
+					rel="noopener noreferrer">Mastodon</a
 				>
 			</p>
 		</div>
