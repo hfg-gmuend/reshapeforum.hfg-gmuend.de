@@ -118,6 +118,31 @@
 		</div>
 	</div>
 
+	<section class="first-section hidden">
+		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[134px] mb-[80px] md:mb-[120px]">
+			<div>
+				<img src="images/group.png" alt="Group of openmojis" />
+			</div>
+				<p
+			class="reshape-lead-medium md:reshape-desktop-lead-medium max-w-[1200px]"
+		>
+			How do Artificial Intelligence and Machine Learning reshape the landscape of art and design?
+		</p>
+		
+			
+			
+			<p class="reshape-copy max-md:inset-left mb-[25px] md:mb-0">
+				Wow, what has happened in the last 12 months? We are experiencing a new wave of AI hype, and
+				generative AI is at the heart of it. The success of tools like ChatGPT, Stable Diffusion or
+				DALL-E, which are usable for everyone, have contributed to the fact that the topic of “AI
+				and creativity” is now mainstream and widely discussed. New products and business models
+				based on the technology of large language models (LLMs) are spawning everywhere. Signs of
+				generative AI becoming a maturing technology.
+			</p>
+			
+		</div>
+	</section>
+
 	
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
