@@ -4,7 +4,7 @@
 	import Grid from './Grid.svelte';
 
 	// Number of squares
-	let squareCount = 14;
+	let squareCount = 10;
 
 	// Size of the squares
 	let squareSize = 20;
@@ -20,13 +20,16 @@
 	let colorBackground = '#fff0';
 
 	// colors for the scale. needed to add a color between green and blue to make the morphing nicer
+	// let colors = [
+	// 	'#6D59A2',
+	// 	'#5C67AD',
+	// 	'#ECE76F',
+	// 	'#F19645',
+	// 	'#E98AB7',
+	// 	'#6D59A2'
+	// ];
 	let colors = [
-		'#6D59A2',
-		'#5C67AD',
-		'#ECE76F',
-		'#F19645',
-		'#E98AB7',
-		'#6D59A2'
+		'#8b8b8b',
 	];
 	let colorScale = chroma
 		.scale(colors)
@@ -34,20 +37,20 @@
 		.mode('lch');
 
 	// length in seconds for the color cycling
-	let colorCycleLength = 24;
+	let colorCycleLength = 42;
 
 	// Threshold parameter for the animation when showing (or hiding) and moving squares.
 	// The animation runs from 0 to 1. When reaching the threshold, the circle will be
 	// full in size. The rest of the time is used to grow the joints and reduce the corner radius.
 	let animationThreshold = 0.2;
 	// Duration of the animations
-	let duration = 600;
+	let duration = 1200;
 	// Provide a function for the duration. This way this parameter is dynamic for the tweens.
 	let animationDuration = (oldVal, newVal) => {
 		return duration;
 	};
 	// Gives the interval in milliseconds after which animations will start
-	let animationInterval = 800;
+	let animationInterval = 1800;
 	// Gives the probability in percent for a square to move
 	let animationProbability = 40;
 
