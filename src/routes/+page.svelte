@@ -17,7 +17,8 @@
 	let menuOpen = false;
 
 	function scrollIntoView({ target }) {
-		if(target.getAttribute('href').startsWith('http')) window.open(target.getAttribute('href'), '_blank');
+		if (target.getAttribute('href').startsWith('http'))
+			window.open(target.getAttribute('href'), '_blank');
 		const el = document.querySelector(target.getAttribute('href'));
 		if (!el) return;
 		el.scrollIntoView({
@@ -36,6 +37,16 @@
 		//{ title: 'KITeGG', link: '#kitegg' },
 		{ title: 'Reshape 2023', link: 'https://reshapeforum.hfg-gmuend.de/2023/' }
 	];
+
+	function randomPosition() {
+		return {
+			top: Math.random() * 70 + '%',
+			left: Math.random() * 70 + '%'
+		};
+	}
+
+	const emojis = ['❓', '🤖', '🎨', '📄'];
+	const emojiPositions = emojis.map(() => randomPosition());
 </script>
 
 <!-- Mobile Menu -->
@@ -44,7 +55,9 @@
 		<ul class="h-full flex flex-col pt-[80px]">
 			{#each menuItems as item}
 				<li class="basis-[95px]" on:click={() => (menuOpen = false)}>
-					<a href="{item.link}" on:click|preventDefault={scrollIntoView} target="_blank">{item.title}</a>
+					<a href={item.link} on:click|preventDefault={scrollIntoView} target="_blank"
+						>{item.title}</a
+					>
 				</li>
 			{/each}
 		</ul>
@@ -57,11 +70,11 @@
 	<nav class="font-light w-full max-md:hidden">
 		<ul class="flex justify-between">
 			{#each menuItems.slice(0, Math.floor(menuItems.length / 2)) as item}
-				<li><a href="{item.link}" on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
+				<li><a href={item.link} on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
 			{/each}
 			<li><a href="#" class="font-medium">reshape</a></li>
 			{#each menuItems.slice(Math.floor(menuItems.length / 2)) as item}
-				<li><a href="{item.link}" on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
+				<li><a href={item.link} on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
 			{/each}
 		</ul>
 	</nav>
@@ -87,18 +100,15 @@
 				<div class="inset pb-[24px] flex items-end justify-between">
 					<div>
 						<span class="block md:text-[64px] md:leading-[4rem]"
-							><span class="md:text-[32px] md:leading-[4rem]"
-							>upcoming:</span
-							><br />
+							><span class="md:text-[32px] md:leading-[4rem]">upcoming:</span><br />
 							14.-<br />
 							16.5.25</span
 						>
 						<span class="reshape-copy">Hochschule für Gestaltung <br />Schwäbisch Gmünd</span>
 					</div>
 					<div class="w-28 md:w-40">
-						<a href="https://aid-lab.hfg-gmuend.de/" target="_blank" rel="noopener noreferrer"
-							>
-						<LabLogo />
+						<a href="https://aid-lab.hfg-gmuend.de/" target="_blank" rel="noopener noreferrer">
+							<LabLogo />
 						</a>
 					</div>
 				</div>
@@ -118,32 +128,37 @@
 		</div>
 	</div>
 
-	<section class="first-section hidden">
+	<section class="first-section">
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[134px] mb-[80px] md:mb-[120px]">
-			<div>
-				<img src="images/group.png" alt="Group of openmojis" />
+			<div class="relative w-full h-full min-h-[300px]">
+				{#each emojis as emoji, i}
+					<img
+						class="floating{[i+1]} w-20 h-20"
+						style="position: absolute; top: {emojiPositions[i].top}; left: {emojiPositions[i].left};"
+						src="images/{[i+1]}.png"
+						alt="Floating {emojis[i]} emoji"
+
+					/>
+				{/each}
 			</div>
-				<p
-			class="reshape-lead-medium md:reshape-desktop-lead-medium max-w-[1200px]"
-		>
-			How do Artificial Intelligence and Machine Learning reshape the landscape of art and design?
-		</p>
-		
-			
-			
-			<p class="reshape-copy max-md:inset-left mb-[25px] md:mb-0">
-				Wow, what has happened in the last 12 months? We are experiencing a new wave of AI hype, and
-				generative AI is at the heart of it. The success of tools like ChatGPT, Stable Diffusion or
-				DALL-E, which are usable for everyone, have contributed to the fact that the topic of “AI
-				and creativity” is now mainstream and widely discussed. New products and business models
-				based on the technology of large language models (LLMs) are spawning everywhere. Signs of
-				generative AI becoming a maturing technology.
-			</p>
-			
+			<div class="md:col-span-2">
+				<!-- Heading -->
+				<h1 class="text-5xl md:text-6xl leading-tight mb-12 text-gray-900">
+					How does Machine Learning reshape the landscape of art and design?
+				</h1>
+
+				<!-- Content Columns -->
+				
+					<p class="reshape-copy">
+						Join us at the Reshape Forum for Artificial Intelligence in Art and Design. A dynamic two-day convergence where AI and creative practice intersect. This forum brings together leading thinkers who critically examine the role of AI in shaping design practice, ethical frameworks, and user experiences. Through speculative approaches, narrative exploration, and critical engineering, these experts challenge dominant paradigms and propose new ways of engaging with technology.
+						
+					</p>
+					
+				
+			</div>
 		</div>
 	</section>
 
-	
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
@@ -220,10 +235,10 @@
 	.reshape-title {
 		position: relative;
 		font-size: 55px;
-		background: #ECE76F;
+		background: #ece76f;
 		padding: 0.5em;
-		border-radius:0.5em;
-		display:inline-flex;
+		border-radius: 0.5em;
+		display: inline-flex;
 		padding-top: 0.1em;
 		padding-bottom: 0.2em;
 	}
@@ -234,7 +249,7 @@
 		line-height: 19px;
 		font-weight: 500;
 		margin-top: 1em;
-    	margin-left: 2em;
+		margin-left: 2em;
 	}
 
 	@media (min-width: 768px) {
@@ -277,5 +292,49 @@
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
+	}
+
+	@keyframes floating1 {
+		0% { transform: translate3d(0, 0, 0) rotate(0deg); }
+		33% { transform: translate3d(-10px, -15px, 0) rotate(-5deg); }
+		66% { transform: translate3d(15px, -5px, 0) rotate(5deg); }
+		100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+	}
+
+	@keyframes floating2 {
+		0% { transform: translate3d(0, 0, 0) rotate(0deg); }
+		33% { transform: translate3d(15px, 10px, 0) rotate(8deg); }
+		66% { transform: translate3d(-8px, -12px, 0) rotate(-8deg); }
+		100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+	}
+
+	@keyframes floating3 {
+		0% { transform: translate3d(0, 0, 0) rotate(0deg); }
+		33% { transform: translate3d(-12px, -20px, 0) rotate(-10deg); }
+		66% { transform: translate3d(20px, -8px, 0) rotate(10deg); }
+		100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+	}
+
+	@keyframes floating4 {
+		0% { transform: translate3d(0, 0, 0) rotate(0deg); }
+		33% { transform: translate3d(8px, 5px, 0) rotate(5deg); }
+		66% { transform: translate3d(-5px, -8px, 0) rotate(-5deg); }
+		100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+	}
+
+	.floating1 {
+		animation: floating1 22s ease-in-out infinite;
+	}
+
+	.floating2 {
+		animation: floating2 42s ease-in-out infinite;
+	}
+
+	.floating3 {
+		animation: floating3 34s ease-in-out infinite;
+	}
+
+	.floating4 {
+		animation: floating4 14s ease-in-out infinite;
 	}
 </style>
