@@ -2,7 +2,7 @@
     import { onMount, onDestroy } from "svelte";
     import { browser } from "$app/environment";
   
-    export let animationSpeed = 0.8; // Overall animation speed
+    export let animationSpeed = 1; // Overall animation speed
     export let mirrorY = false; // When true, mirrors the SVG on the y-axis
   
     // Utility to return a random number within a given range.
@@ -42,13 +42,13 @@
       },
       p4: {
         base: { x: 631, y: 263.304 },
-        amp: { x: randomRange(-10, 10), y: randomRange(-10, 10) },
+        amp: { x: randomRange(-1, 1), y: randomRange(-1, 1) },
         freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
         phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
       },
       p5: {
         base: { x: 631, y: 442.895 },
-        amp: { x: randomRange(-10, 10), y: randomRange(-10, 10) },
+        amp: { x: randomRange(-1, 1), y: randomRange(-1, 1) },
         freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
         phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
       },
@@ -60,13 +60,13 @@
       },
       p7: {
         base: { x: 573.005, y: 597.408 },
-        amp: { x: randomRange(-10, 10), y: randomRange(-10, 10) },
+        amp: { x: randomRange(-1, 1), y: randomRange(-1, 1) },
         freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
         phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
       },
       p8: {
         base: { x: 491.829, y: 614.775 },
-        amp: { x: randomRange(-10, 10), y: randomRange(-10, 10) },
+        amp: { x: randomRange(-1, 1), y: randomRange(-1, 1) },
         freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
         phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
       },
