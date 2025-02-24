@@ -3,33 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'Atlas Grotesk';
-	src: url('/fonts/AtlasGrotesk/AtlasGrotesk-Light-Web.woff2');
-	font-weight: 300; /*light = 300*/
-}
-
-@font-face {
-	font-family: 'Atlas Grotesk';
-	src: url('/fonts/AtlasGrotesk/AtlasGrotesk-Regular-Web.woff2');
-	font-weight: normal; /*normal = 400*/
-}
-
-@font-face {
-	font-family: 'Atlas Grotesk';
-	src: url('/fonts/AtlasGrotesk/AtlasGrotesk-Medium-Web.woff2');
-	font-weight: 500; /*medium = 500*/
-}
-
-@font-face {
-	font-family: 'Atlas Grotesk';
-	src: url('/fonts/AtlasGrotesk/AtlasGrotesk-Bold-Web.woff2');
-	font-weight: bold; /*bold = 700*/
-}
-
-@font-face {
-	font-family: 'Atlas Grotesk';
-	src: url('fonts/AtlasGrotesk/AtlasGrotesk-Black-Web.woff2');
-	font-weight: 900; /*black/heavy = 900*/
+	font-family: 'Inter';
+	src: url('fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+	font-weight: 100 900;
+	font-style: normal;
 }
 
 h1,
@@ -43,7 +20,7 @@ p {
 
 html,
 body {
-	font-family: 'Atlas Grotesk', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 500;
 }
 

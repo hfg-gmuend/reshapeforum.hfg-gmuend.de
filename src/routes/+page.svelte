@@ -162,7 +162,7 @@
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
-				Kontakt
+				Contact
 			</h2>
 			<p class="reshape-copy">
 				<span class="font-medium">Hoch­schule für Gestal­tung Schwä­bisch Gmünd</span>
