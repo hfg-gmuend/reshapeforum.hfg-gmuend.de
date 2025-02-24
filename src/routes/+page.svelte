@@ -113,7 +113,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="absolute top-0 left-0 bottom-0 right-0">
+			<div class="absolute top-0 left-0 bottom-0 right-0 hidden">
 				<div class="h-full inset grid grid-cols-2 md:grid-cols-6 gap-5 md-gap-2 content-center">
 					<div class="md:col-span-2" />
 
