@@ -158,7 +158,7 @@
 
       const distance = Math.sqrt(diffX * diffX + diffY * diffY);
       const decay = Math.exp(-distance / 300); // Controls falloff: adjust 200 as needed.
-      const attractionStrength = 0.3; // Adjust this value for more or less attraction.
+      const attractionStrength = 0.2; // Adjust this value for more or less attraction.
       const attractionX = diffX * attractionStrength * decay;
       const attractionY = diffY * attractionStrength * decay;
 
