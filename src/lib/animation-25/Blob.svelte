@@ -147,7 +147,7 @@
     const t = timestamp * animationSpeed;
 
     // Smoothly interpolate our point toward the current mouse position.
-    const lerpFactor = 0.005; // Adjust for faster/slower interpolation.
+    const lerpFactor = 0.05; // Adjust for faster/slower interpolation.
     interpPoint.x += (mouse.x - interpPoint.x) * lerpFactor;
     interpPoint.y += (mouse.y - interpPoint.y) * lerpFactor;
 
