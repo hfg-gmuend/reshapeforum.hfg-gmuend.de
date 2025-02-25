@@ -157,8 +157,8 @@
       let diffY = mouse.y - baseY;
 
       const distance = Math.sqrt(diffX * diffX + diffY * diffY);
-      const decay = Math.exp(-distance / 300); // Controls falloff: adjust 200 as needed.
-      const attractionStrength = 0.2; // Adjust this value for more or less attraction.
+      const decay = 1 / (1 + distance / 250); // Alternative decay: faster falloff as distance increases.
+      const attractionStrength = -0.2; // Adjust this value for more or less attraction.
       const attractionX = diffX * attractionStrength * decay;
       const attractionY = diffY * attractionStrength * decay;
 
