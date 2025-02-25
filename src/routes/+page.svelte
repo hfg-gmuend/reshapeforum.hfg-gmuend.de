@@ -35,7 +35,7 @@
 		// { title: 'Registration', link: '#anmeldung' },
 		// { title: 'AI+D Lab', link: '#ai-d-lab' },
 		//{ title: 'KITeGG', link: '#kitegg' },
-		{ title: 're shape 2023', link: 'https://reshapeforum.hfg-gmuend.de/2023/' }
+		{ title: '<span class="inline-block -scale-x-100">re</span> shape 2023', link: 'https://reshapeforum.hfg-gmuend.de/2023/' }
 	];
 
 	function randomPosition() {
@@ -56,7 +56,7 @@
 			{#each menuItems as item}
 				<li class="basis-[95px]" on:click={() => (menuOpen = false)}>
 					<a href={item.link} on:click|preventDefault={scrollIntoView} target="_blank"
-						>{item.title}</a
+						>{@html item.title}</a
 					>
 				</li>
 			{/each}
@@ -72,13 +72,13 @@
 			{#each menuItems.slice(0, Math.floor(menuItems.length / 2)) as item}
 				<li><a href={item.link} on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
 			{/each}
-			<li><a href="#" class="font-medium">re shape</a></li>
+			<li><a href="#" class="font-medium"><span class="inline-block -scale-x-100">re</span> shape</a></li>
 			{#each menuItems.slice(Math.floor(menuItems.length / 2)) as item}
 				<li><a href={item.link} on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
 			{/each}
 		</ul>
 	</nav>
-	<span class="font-medium text-base md:hidden">re shape</span>
+	<span class="font-medium text-base md:hidden"><span class="inline-block -scale-x-100">re</span> shape</span>
 	<button class="md:hidden ml-auto p-2" on:click={toggleMenu} class:rotate-45={!menuOpen}
 		><MenuIcon /></button
 	>
@@ -118,7 +118,7 @@
 					<div class="md:col-span-2" />
 
 					<div class="-ml-[50%]">
-						<h1 class="z-20 reshape-title">re shape</h1>
+						<h1 class="z-20 reshape-title"><span class="inline-block -scale-x-100">re</span> shape</h1>
 						<h2 class="z-20 reshape-subtitle">
 							Forum for Artificial Intelligence<br />in Art and Design
 						</h2>
@@ -150,7 +150,7 @@
 				<!-- Content Columns -->
 				
 					<p class="reshape-copy">
-						Join us at the re shape Forum for Artificial Intelligence in Art and Design. A dynamic two-day convergence where AI and creative practice intersect. This forum brings together leading thinkers who critically examine the role of AI in shaping design practice, ethical frameworks, and user experiences. Through speculative approaches, narrative exploration, and critical engineering, these experts challenge dominant paradigms and propose new ways of engaging with technology.
+						Join us at the <span class="inline-block -scale-x-100">re</span> shape Forum for Artificial Intelligence in Art and Design. A dynamic two-day convergence where AI and creative practice intersect. This forum brings together leading thinkers who critically examine the role of AI in shaping design practice, ethical frameworks, and user experiences. Through speculative approaches, narrative exploration, and critical engineering, these experts challenge dominant paradigms and propose new ways of engaging with technology.
 						
 					</p>
 					
