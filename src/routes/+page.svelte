@@ -97,8 +97,8 @@
 		</div> -->
 		<div class=" absolute top-0 right-0 left-0 bottom-0">
 			<div class="absolute left-0 bottom-0 right-0 z-10">
-				<div class="inset pb-[24px] flex items-end justify-between">
-					<div>
+				<div class="inset pb-[24px] flex items-end justify-end">
+					<div class="hidden">
 						<span class="block md:text-[64px] md:leading-[4rem]"
 							><span class="md:text-[32px] md:leading-[4rem]">upcoming:</span><br />
 							14.-<br />
