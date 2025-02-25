@@ -35,7 +35,7 @@
 		// { title: 'Registration', link: '#anmeldung' },
 		// { title: 'AI+D Lab', link: '#ai-d-lab' },
 		//{ title: 'KITeGG', link: '#kitegg' },
-		{ title: '<span class="inline-block -scale-x-100">re</span> shape 2023', link: 'https://reshapeforum.hfg-gmuend.de/2023/' }
+		//{ title: '<span class="inline-block -scale-x-100">re</span> shape 2023', link: 'https://reshapeforum.hfg-gmuend.de/2023/' }
 	];
 
 	function randomPosition() {
@@ -56,10 +56,15 @@
 			{#each menuItems as item}
 				<li class="basis-[95px]" on:click={() => (menuOpen = false)}>
 					<a href={item.link} on:click|preventDefault={scrollIntoView} target="_blank"
-						>{@html item.title}</a
+						>{item.title}</a
 					>
 				</li>
 			{/each}
+			<li class="basis-[95px]">
+				<a href="https://reshapeforum.hfg-gmuend.de/2023/" target="_blank"
+					><span class="inline-block -scale-x-100">re</span> shape 2023</a
+				>
+			</li>
 		</ul>
 	</nav>
 {/if}
@@ -76,6 +81,11 @@
 			{#each menuItems.slice(Math.floor(menuItems.length / 2)) as item}
 				<li><a href={item.link} on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
 			{/each}
+			<li>
+				<a href="https://reshapeforum.hfg-gmuend.de/2023/" target="_blank"
+					><span class="inline-block -scale-x-100">re</span> shape 2023</a
+				>
+			</li>
 		</ul>
 	</nav>
 	<span class="font-medium text-base md:hidden"><span class="inline-block -scale-x-100">re</span> shape</span>
