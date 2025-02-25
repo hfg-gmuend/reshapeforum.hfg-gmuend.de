@@ -128,7 +128,7 @@
 		</div>
 	</div>
 
-	<section class="first-section">
+	<section class="first-section z-20 relative">
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[134px] mb-[80px] md:mb-[120px]">
 			<div class="relative w-full h-full min-h-[300px]">
 				{#each emojis as emoji, i}

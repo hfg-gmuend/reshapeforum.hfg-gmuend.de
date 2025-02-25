@@ -36,7 +36,7 @@
       },
       p3: {
         base: { x: 505.345, y: 108.117 },
-        amp: { x: randomRange(-10, 10), y: randomRange(-10, 10) },
+        amp: { x: randomRange(-15, 15), y: randomRange(-15, 15) },
         freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
         phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
       },
@@ -54,7 +54,7 @@
       },
       p6: {
         base: { x: 631, y: 525.783 },
-        amp: { x: randomRange(-10, 10), y: randomRange(-10, 10) },
+        amp: { x: randomRange(-15, 15), y: randomRange(-15, 15) },
         freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
         phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
       },
@@ -108,14 +108,45 @@
     `;
   
     let animationFrame;
+
+    function fade(t) {
+      return t * t * t * (t * (t * 6 - 15) + 10);
+    }
+
+    function lerp(t, a, b) {
+      return a + t * (b - a);
+    }
+
+    function grad(hash, x) {
+      return (hash & 1) === 0 ? x : -x;
+    }
+
+    const p = new Uint8Array(512);
+    for (let i = 0; i < 256; i++) {
+      p[i] = p[i + 256] = Math.floor(randomRange(0, 256));
+    }
+
+    function perlin1d(x) {
+      // Perlin noise function for 1D space. Returns a value between 0 and 1.
+      const X = Math.floor(x) & 255;
+      x -= Math.floor(x);
+      const u = fade(x);
+      return lerp(u, grad(p[X], x), grad(p[X + 1], x - 1));
+    }
   
     // The animation loop updates all points using a sine function for smooth, fluid motion.
     function animate(timestamp) {
       const t = timestamp * animationSpeed;
       for (const key in points) {
         const pt = points[key];
-        animatedPoints[key].x = pt.base.x + pt.amp.x * Math.sin(pt.freq.x * t + pt.phase.x);
-        animatedPoints[key].y = pt.base.y + pt.amp.y * Math.sin(pt.freq.y * t + pt.phase.y);
+        const noise = 1+ (perlin1d(t*0.0001) * 0.1);
+        // console.log(noise);
+
+        animatedPoints[key].x = pt.base.x * noise + pt.amp.x * Math.sin(pt.freq.x * t + pt.phase.x);
+        animatedPoints[key].y = pt.base.y * noise + pt.amp.y * Math.sin(pt.freq.y * t + pt.phase.y);
+
+        // animatedPoints[key].x = pt.base.x + pt.amp.x * Math.sin(pt.freq.x * t + pt.phase.x);
+        // animatedPoints[key].y = pt.base.y + pt.amp.y * Math.sin(pt.freq.y * t + pt.phase.y);
       }
       animationFrame = requestAnimationFrame(animate);
     }
@@ -132,7 +163,7 @@
   </script>
   
   <svg
-    class="w-full"
+    class="w-full overflow-visible"
     width="650"
     height="720"
     viewBox="0 0 650 720"
@@ -140,7 +171,7 @@
     xmlns="http://www.w3.org/2000/svg"
   >
     <!-- Wrap the animated content in a group to conditionally apply mirroring -->
-    <g transform={mirrorY ? "translate(650,0) scale(-1,1)" : ""}>
+    <g transform={mirrorY ? "translate(650,0) scale(-1,1)" : ""} class="overflow-visible">
       <path d={pathD} fill="url(#paint0_linear)" />
     </g>
     <defs>
