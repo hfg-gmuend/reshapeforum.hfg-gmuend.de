@@ -2,7 +2,7 @@
   import { onMount, onDestroy } from "svelte";
   import { browser } from "$app/environment";
 
-  export let animationSpeed = 1; // Overall animation speed
+  export let animationSpeed = 0.5; // Overall animation speed
   export let mirrorY = false; // When true, mirrors the SVG on the y-axis
   export let width = 650; // Default width of the container
 
@@ -37,7 +37,7 @@
     },
     p3: {
       base: { x: 505.345, y: 108.117 },
-      amp: { x: randomRange(-15, 15), y: randomRange(-15, 15) },
+      amp: { x: randomRange(-12, 12), y: randomRange(-12, 12) },
       freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
       phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
     },
@@ -48,39 +48,39 @@
       phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
     },
     p5: {
-      base: { x: 631, y: 442.895 },
+      base: { x: 631, y: 442},
       amp: { x: randomRange(-1, 1), y: randomRange(-1, 1) },
       freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 2 * Math.PI) },
       phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
     },
     p6: {
-      base: { x: 631, y: 525.783 },
-      amp: { x: randomRange(-15, 15), y: randomRange(-15, 15) },
+      base: { x: 631, y: 525 },
+      amp: { x: randomRange(-12, 12), y: randomRange(-12, 12) },
       freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
       phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
     },
     p7: {
-      base: { x: 573.005, y: 597.408 },
+      base: { x: 573, y: 597 },
       amp: { x: randomRange(-1, 1), y: randomRange(-1, 1) },
       freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
       phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
     },
     p8: {
-      base: { x: 491.829, y: 614.775 },
+      base: { x: 491, y: 614 },
       amp: { x: randomRange(-1, 1), y: randomRange(-1, 1) },
-      freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
+      freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 2 * Math.PI) },
       phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
     },
     p9: {
-      base: { x: 0.0000610352, y: 720 },
+      base: { x: 0, y: 720 },
       amp: { x: randomRange(-5, 5), y: randomRange(-5, 5) },
-      freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
+      freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.001) },
       phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
     },
     p10: {
-      base: { x: 0.000442982, y: 360 },
+      base: { x: 0, y: 360 },
       amp: { x: randomRange(-5, 5), y: randomRange(-5, 5) },
-      freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.003) },
+      freq: { x: randomRange(0.00001, 0.00003), y: randomRange(0.00001, 0.0001) },
       phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
     }
   };
@@ -93,22 +93,24 @@
 
   // Track mouse position (defaults to the center of the SVG)
   export let mouse = { x: 650 / 2, y: 720 / 2 };
-  
+
+  // The interpolated point that smoothly moves toward the mouse.
+  let interpPoint = { x: mouse.x, y: mouse.y };
 
   // Build the path "d" attribute reactively.
   // Structure: M p0 L p1 L p2 C p3 p4 p5 C p6 p7 p8 L p9 L p10 Z
   $: pathD = `
-    M${animatedPoints.p0.x.toFixed(2)} ${animatedPoints.p0.y.toFixed(2)}
-    L${animatedPoints.p1.x.toFixed(2)} ${animatedPoints.p1.y.toFixed(2)}
-    L${animatedPoints.p2.x.toFixed(2)} ${animatedPoints.p2.y.toFixed(2)}
-    C${animatedPoints.p3.x.toFixed(2)} ${animatedPoints.p3.y.toFixed(2)}
-     ${animatedPoints.p4.x.toFixed(2)} ${animatedPoints.p4.y.toFixed(2)}
-     ${animatedPoints.p5.x.toFixed(2)} ${animatedPoints.p5.y.toFixed(2)}
-    C${animatedPoints.p6.x.toFixed(2)} ${animatedPoints.p6.y.toFixed(2)}
-     ${animatedPoints.p7.x.toFixed(2)} ${animatedPoints.p7.y.toFixed(2)}
-     ${animatedPoints.p8.x.toFixed(2)} ${animatedPoints.p8.y.toFixed(2)}
-    L${animatedPoints.p9.x.toFixed(2)} ${animatedPoints.p9.y.toFixed(2)}
-    L${animatedPoints.p10.x.toFixed(2)} ${animatedPoints.p10.y.toFixed(2)}
+    M${animatedPoints.p0.x.toFixed(1)} ${animatedPoints.p0.y.toFixed(1)}
+    L${animatedPoints.p1.x.toFixed(1)} ${animatedPoints.p1.y.toFixed(1)}
+    L${animatedPoints.p2.x.toFixed(1)} ${animatedPoints.p2.y.toFixed(1)}
+    C${animatedPoints.p3.x.toFixed(1)} ${animatedPoints.p3.y.toFixed(1)}
+     ${animatedPoints.p4.x.toFixed(1)} ${animatedPoints.p4.y.toFixed(1)}
+     ${animatedPoints.p5.x.toFixed(1)} ${animatedPoints.p5.y.toFixed(1)}
+    C${animatedPoints.p6.x.toFixed(1)} ${animatedPoints.p6.y.toFixed(1)}
+     ${animatedPoints.p7.x.toFixed(1)} ${animatedPoints.p7.y.toFixed(1)}
+     ${animatedPoints.p8.x.toFixed(1)} ${animatedPoints.p8.y.toFixed(1)}
+    L${animatedPoints.p9.x.toFixed(1)} ${animatedPoints.p9.y.toFixed(1)}
+    L${animatedPoints.p10.x.toFixed(1)} ${animatedPoints.p10.y.toFixed(1)}
     Z
   `;
 
@@ -140,9 +142,15 @@
   }
 
   // The animation loop updates all points using a sine function for smooth, fluid motion.
-  // Now each point is also slightly attracted toward the mouse cursor.
-  function animate(timestamp) {    
+  // Now each point is also slightly attracted toward the interpolated point.
+  function animate(timestamp) {
     const t = timestamp * animationSpeed;
+
+    // Smoothly interpolate our point toward the current mouse position.
+    const lerpFactor = 0.005; // Adjust for faster/slower interpolation.
+    interpPoint.x += (mouse.x - interpPoint.x) * lerpFactor;
+    interpPoint.y += (mouse.y - interpPoint.y) * lerpFactor;
+
     for (const key in points) {
       const pt = points[key];
       const noise = 1 + perlin1d(t * 0.0001) * 0.1;
@@ -151,30 +159,23 @@
       const baseX = pt.base.x * noise + pt.amp.x * Math.sin(pt.freq.x * t + pt.phase.x);
       const baseY = pt.base.y * noise + pt.amp.y * Math.sin(pt.freq.y * t + pt.phase.y);
 
-      // Calculate a smooth attraction offset toward the mouse.
-      let diffX = mouse.x - baseX;
-      if(mirrorY) diffX = (width - mouse.x) - baseX;
-      let diffY = mouse.y - baseY;
+      // Calculate a smooth attraction offset toward the interpolated point.
+      let diffX = interpPoint.x - baseX;
+      if (mirrorY) diffX = (width - interpPoint.x) - baseX;
+      let diffY = interpPoint.y - baseY;
 
       const distance = Math.sqrt(diffX * diffX + diffY * diffY);
-      // const decay = 1 / (1 + distance / 250); // Alternative decay: faster falloff as distance increases.
-      const decay = Math.exp(-distance / 300); // Controls falloff: adjust 200 as needed.
-
+      const decay = Math.exp(-distance / 300); // Controls falloff: adjust as needed.
       const attractionStrength = -0.2; // Adjust this value for more or less attraction.
       const attractionX = diffX * attractionStrength * decay;
       const attractionY = diffY * attractionStrength * decay;
 
-
-      if([
-        'p0',
-        'p1',
-        'p9',
-        'p10'
-      ].includes(key)) {
+      // If the point is an anchor point, don't apply the attraction.
+      if (["p0", "p1", "p9", "p10"].includes(key)) {
         animatedPoints[key].x = baseX;
         animatedPoints[key].y = baseY;
         continue;
-      } 
+      }
 
       animatedPoints[key].x = baseX + attractionX;
       animatedPoints[key].y = baseY + attractionY;

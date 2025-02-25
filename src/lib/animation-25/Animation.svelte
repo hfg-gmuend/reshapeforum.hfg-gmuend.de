@@ -7,7 +7,7 @@
         mouse.x = event.clientX - rect.left;
         mouse.y = event.clientY - rect.top;
         width = rect.width;
-        console.log(mouse);
+        // console.log(mouse);
     }
 </script>
 
