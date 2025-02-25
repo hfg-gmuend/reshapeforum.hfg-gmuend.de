@@ -127,8 +127,8 @@
   }
 
   const p = new Uint8Array(512);
-  for (let i = 0; i < 256; i++) {
-    p[i] = p[i + 256] = Math.floor(randomRange(0, 256));
+  for (let i = 0; i < 512; i++) {
+    p[i] = Math.floor(randomRange(0, 256));
   }
 
   function perlin1d(x) {
@@ -157,7 +157,9 @@
       let diffY = mouse.y - baseY;
 
       const distance = Math.sqrt(diffX * diffX + diffY * diffY);
-      const decay = 1 / (1 + distance / 250); // Alternative decay: faster falloff as distance increases.
+      // const decay = 1 / (1 + distance / 250); // Alternative decay: faster falloff as distance increases.
+      const decay = Math.exp(-distance / 300); // Controls falloff: adjust 200 as needed.
+
       const attractionStrength = -0.2; // Adjust this value for more or less attraction.
       const attractionX = diffX * attractionStrength * decay;
       const attractionY = diffY * attractionStrength * decay;
