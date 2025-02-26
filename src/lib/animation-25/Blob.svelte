@@ -68,7 +68,7 @@
     p8: {
       base: { x: 491, y: 614 },
       amp: { x: randomRange(-1, 1), y: randomRange(-1, 1) },
-      freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 2 * Math.PI) },
+      freq: { x: randomRange(0.001, 0.003), y: randomRange(0.001, 0.002) },
       phase: { x: randomRange(0, 2 * Math.PI), y: randomRange(0, 2 * Math.PI) }
     },
     p9: {

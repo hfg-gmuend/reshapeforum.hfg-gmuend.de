@@ -105,7 +105,13 @@
 				<source src={AnimationMovieMP4} type="video/mp4" />
 			</video> 
 		</div> -->
-		<div class=" absolute top-0 right-0 left-0 bottom-0 pointer-events-none">
+		
+		<div class="w-28 md:w-40 absolute bottom-0 right-0 mb-4 mr-4 z-20">
+			<a href="https://aid-lab.hfg-gmuend.de/" target="_blank" rel="noopener noreferrer">
+				<LabLogo />
+			</a>
+		</div>
+		<div class="absolute top-0 right-0 left-0 bottom-0 hidden">
 			<div class="absolute left-0 bottom-0 right-0 z-10">
 				<div class="inset pb-[24px] flex items-end justify-end">
 					<div class="hidden">
@@ -115,11 +121,6 @@
 							16.5.25</span
 						>
 						<span class="reshape-copy">Hochschule für Gestaltung <br />Schwäbisch Gmünd</span>
-					</div>
-					<div class="w-28 md:w-40">
-						<a href="https://aid-lab.hfg-gmuend.de/" target="_blank" rel="noopener noreferrer">
-							<LabLogo />
-						</a>
 					</div>
 				</div>
 			</div>
