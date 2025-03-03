@@ -1,44 +1,86 @@
 export default [
 	{
-		timeslot: '09:30-10:30',
-		title: 'Nadia Piet',
-		subtitle: 'UX of AI',
-		description: `Designing AI/ML-driven applications is different from designing event posters or more static mobile apps. Designing the user experience of adaptive, intelligent, and semi-autonomous systems present a range of new challenges for us designers to take on. This talk introduces you to exactly that - ranging from interactions around explainability and user feedback mechanisms, to greater ethical challenges such as echo chambers and data bias 📈 We also look at UX as having great potential to shape algorithmic interactions for the better and close the gap between the abstract promises of ethical AI principles and people’s lived experience. If you're looking to deepen your understanding of design for AI and how design(ers) can shape the course of AI, this one is for you!`
+		timeslot: '09:30-09:45',
+		title: 'Arrival and Coffee',
+		subtitle: '',
+		description: ``
 	},
 	{
-		timeslot: '10:30-11:30',
-		title: 'Catherine Breslin',
-		subtitle: 'Conversational Design for Voice Assistants',
-		description: `With the rise of voice interfaces, it's clear that conversation design is a big part of building a successful interface. This talk will cover how people converse, how that inspires the current voice assistant technology, and how LLMs or other developments might change voice assistants in the future.`
+		timeslot: '09:45-10:00',
+		title: 'Opening Remarks',
+		subtitle: 'Welcome address by the symposium organizers',
+		description: `Welcome address by the symposium organizers. Pub 2 präsentieren`
 	},
 	{
-		timeslot: '12:00-13:00',
-		title: 'Ploipailin Flynn',
-		subtitle: 'Mirror mirror: Reflections on “accidentally” discriminatory AI outcomes',
-		description: `Ploipailin Flynn is a business and product strategist interested in the design and build of radically equitable and antiracist futures. She got tired of well-designed tech products and services that turned "accidentally" racist, so she launched ANTI ( antiracistby.design ) as a place of reference for business and product leads to build things that are antiracist by design. Her areas of interest include: The relationship between revenue models and discriminatory design. Antiracist and decolonial futures. Translating abstract principles into tangible products and services. Researching the intersectional impacts of Big Tech, AI, capitalism. `
+		timeslot: '10:00-11:00',
+		title: 'Elisa Giaccardi',
+		subtitle: 'The Entanglement of AI and Design: A New Paradigm for Education',
+		description: ``
 	},
 	{
-		timeslot: '13:00-14:00',
-		title: 'Lunch',
-		subtitle: ''
+		timeslot: '11:00-11:30',
+		title: 'Break',
+		subtitle: '',
+		description: ``
+	},
+	{
+		timeslot: '11:30-12:30',
+		title: 'Tobias Revell',
+		subtitle: 'Speculative Design and AI: Imagining Futures in Design Education',
+		description: ``
+	},
+	{
+		timeslot: '12:30-14:00',
+		title: 'Lunch Break',
+		subtitle: '',
+		description: ``
 	},
 	{
 		timeslot: '14:00-15:00',
-		title: 'Emily Saltz',
-		subtitle: 'AI Safety & Disclosure in Product Design: Practices in Flux',
-		description: `In just a few months time as tools like DALL•E and ChatGPT went mainstream, safety considerations and UX best practices for using AI-generated image and text outputs went  from theoretical to urgent. I'll discuss my firsthand experience developing UX guidelines for labeling of manipulated and synthetic media, and reflect on the evolving considerations and adversarial "anti-personas" as the technology has become more accessible. I'll also discuss how designers and researchers might think about AI safety across the design process, from model training and prompt engineering to guardrails and disclosure for user-facing outputs.`
+		title: 'Maria Luce Lupetti',
+		subtitle: 'Designing Ethics into AI: Educational Approaches',
+		description: ``
 	},
 	{
-		timeslot: '15:00-16:30',
-		title: 'Panel',
-		subtitle: 'AI Industry - professional requirements and fields of activity for designers',
-		description: `What will "working with AI" actually look like after graduation? What are concrete job descriptions for designers? What do they need to know about AI to be able to responsibly co-design AI-based products and services? What emergent fields of activity exist beyond product development, e.g. research, consulting etc.? 
-		<br/> <br/>Moderator: Benedikt Groß<br/><br/> Panelists:<br/><br/> - Nadia Piet (AIxDesign)<br/>- Norbert Riedelsheimer (IBM Client Engineering, Munich) <br/>- Roman Stefan Grasy (Intuity Media Lab, Stuttgart) <br/> - Prof. Dr. rer. nat. Wolfgang Ertel (RWU Ravensburg-Weingarten)`
+		timeslot: '15:00-15:30',
+		title: 'Break',
+		subtitle: '',
+		description: ``
 	},
 	{
-		timeslot: '17:00-18:00',
-		title: 'oio (Matteo Loglio and Simone Rebaudengo)',
-		subtitle: 'Future Everyday Products',
-		description: `oio is a creative company on a quest to turn emerging technologies into an approachable, everyday and sustainable reality. It’s a small team of humans and machines pushing for an impact that outweighs their footprint, shaping future products and narratives for what could be our future. They just launched their first product, designed in collaboration with an AI in a new process they coined as “Artisanal Intelligence”. Constantly pushing the boundaries of post-human collaborations, oio works with big companies, small startups and cultural institutions to shape products and tools for a less-boring future. Some of their collaborations include IKEA, Google, SPACE10, FABRICA, the Museum of the Future, Arduino and Samsung among others.`
+		timeslot: '15:30-16:15',
+		title: 'Niklas Muhs (Zoom)',
+		subtitle: 'Data-Driven Design: Harnessing AI for User-Centered Experiences',
+		description: ``
+	},
+	{
+		timeslot: '16:15-16:45',
+		title: 'Break',
+		subtitle: '',
+		description: ``
+	},
+	{
+		timeslot: '16:45-17:45',
+		title: 'Eryk Salvaggio',
+		subtitle: 'AI Narratives: Storytelling and Machine Learning in Design',
+		description: ``
+	},
+	{
+		timeslot: '17:45-18:15',
+		title: 'Break',
+		subtitle: '',
+		description: ``
+	},
+	{
+		timeslot: '18:15-19:00',
+		title: 'Niko Klein (Zoom)',
+		subtitle: 'Integrating AI Tools in UI/UX Design Education',
+		description: ``
+	},
+	{
+		timeslot: '19:00-19:15',
+		title: 'Closing Remarks',
+		subtitle: '',
+		description: ``
 	}
 ];
