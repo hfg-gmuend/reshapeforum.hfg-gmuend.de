@@ -178,6 +178,64 @@
 		</div>
 	</section>
 
+	<section class="mt-[120px] md:mt-[250px]">
+		<div class="md:grid md:grid-cols-3 gap-10">
+			<div>
+				<h2 class="bg-orange-500 px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
+					Speakers
+				</h2>
+			</div>
+			<div class="col-span-2">
+				<!-- MOBILE (carousel) -->
+				<div class="overflow-hidden inset-negative md:hidden max-md:-mt-[55px]">
+					<SpeakersMobile />
+				</div>
+				<!-- DESKTOP -->
+				<div class="max-md:hidden md:visible">
+					<SpeakersDesktop />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="program" class="pt-[250px]">
+		<div>
+			<h2 class="bg-orange-500 px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
+				Programme
+			</h2>
+		</div>
+		<p class="mb-[55px] md:mb-[65px]">
+			May 14-16, 2025 <br /> (Wednesday - Friday)
+		</p>
+		<Schedule scheduleItems={ITEMS_WEDNESDAY} keyColor="reshape-lila">
+			<h3 slot="heading" class="text-orange-500 md:ml-8 text-4xl basis-1/2 mb-[55px] md:mb-0">
+				Wednesday<br />May 14
+			</h3>
+		</Schedule>
+		<Schedule scheduleItems={ITEMS_THURSDAY} keyColor="reshape-blau">
+			<h3 slot="heading" class="text-orange-500 md:ml-8 text-4xl basis-1/2 mb-[55px] md:mb-0">
+				Thursday<br />May 15
+			</h3></Schedule
+		>
+		<Schedule scheduleItems={ITEMS_FRIDAY} keyColor="reshape-gruen">
+			<h3 slot="heading" class="text-orange-500 md:ml-8 text-4xl basis-1/2 mb-[55px] md:mb-0">
+				Friday<br />May 16
+			</h3>
+		</Schedule>
+		<div id="anmeldung" class="inset-negative"><div class="seperator" /></div>
+		<!--<p
+			class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[55px] md:mt-[120px] max-w-[900px]"
+		>
+			<a
+				href="#"
+				target="_blank"
+				rel="noopener noreferrer"
+				>Join the conference remotely via <span class="text-[#6262FF]">Zoom</span>
+				<span class="big-link w-[12px] md:w-8 md:h-8">&nbsp;</span>
+			</a>
+		</p> -->
+	</section>
+
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
 			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
