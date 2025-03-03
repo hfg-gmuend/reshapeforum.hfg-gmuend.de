@@ -4,7 +4,7 @@
 
 @font-face {
 	font-family: 'Inter';
-	src: url('fonts/Inter/Inter-VariableFont_opsz_wght.ttf') format('truetype');
+	src: url('/fonts/Inter/Inter-VariableFont_opsz_wght.ttf') format('truetype');
 	font-weight: 100 900;
 	font-style: normal;
 }
@@ -36,12 +36,14 @@ body {
 		font-size: 20px;
 		line-height: 24px;
 	}
+
 	.reshape-desktop-lead-medium {
 		font-weight: 500;
 		font-size: 60px;
 		line-height: 72px;
 	}
 }
+
 @responsive {
 	.reshape-lead-light {
 		font-weight: 300;
@@ -65,6 +67,7 @@ body {
 		font-size: 40px;
 		line-height: 48px;
 	}
+
 	.reshape-desktop-section-header {
 		font-size: 60px;
 		line-height: 72px;

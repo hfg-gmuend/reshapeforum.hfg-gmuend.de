@@ -48,7 +48,7 @@
 		background-blend-mode: screen;
 	}
 
-	.speaker-niko-klein {
+	/* .speaker-niko-klein {
 		background-image: url($lib/assets/speaker-portraits/niko-klein.jpg);
 	}
 
@@ -82,7 +82,7 @@
 
 	.speaker-eryk-salvaggio {
 		background-image: url($lib/assets/speaker-portraits/eryk-salvaggio.jpg);
-	}
+	} */
 
 	.speaker-image:hover {
 		background-blend-mode: normal;
