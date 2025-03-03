@@ -20,7 +20,7 @@
 		return;
 	}}
 >
-	<span class="text-{color}">
+	<span class="text-{color}" class:opacity-50={title === 'Break'}>
 		<span class="block reshape-lead-medium" class:expandable>{timeslot}</span>
 		<span class="block">{title}</span>
 		<span class="block">{subtitle}</span></span
