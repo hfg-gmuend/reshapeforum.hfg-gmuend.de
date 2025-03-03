@@ -77,7 +77,9 @@
 			{#each menuItems.slice(0, Math.floor(menuItems.length / 2)) as item}
 				<li><a href={item.link} on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
 			{/each}
-			<li><a href="#" class="font-medium"><span class="inline-block -scale-x-100">re</span> shape</a></li>
+			<li>
+				<a href="#" class="font-medium"><span class="inline-block -scale-x-100">re</span> shape</a>
+			</li>
 			{#each menuItems.slice(Math.floor(menuItems.length / 2)) as item}
 				<li><a href={item.link} on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
 			{/each}
@@ -88,16 +90,18 @@
 			</li>
 		</ul>
 	</nav>
-	<span class="font-medium text-base md:hidden"><span class="inline-block -scale-x-100">re</span> shape</span>
+	<span class="font-medium text-base md:hidden"
+		><span class="inline-block -scale-x-100">re</span> shape</span
+	>
 	<button class="md:hidden ml-auto p-2" on:click={toggleMenu} class:rotate-45={!menuOpen}
 		><MenuIcon /></button
 	>
 </header>
 
-<main class=" inset ">
-	<div class="pt-11 inset-negative w-screen h-screen border-b-2 border-black">
+<main class=" inset">
+	<div class="pt-11 inset-negative w-screen h-screen">
 		<!-- Desktop Animation -->
-		<div class="absolute top-0 right-0 left-0 bottom-0 "><Animation /></div>
+		<div class="absolute top-0 right-0 left-0 bottom-0"><Animation /></div>
 		<!-- End of Desktop Animation -->
 		<!-- <div class="animation-fallback-gif absolute top-0 right-0 left-0 bottom-0 md:hidden">
 			<video autoplay="true" loop="true" contols>
@@ -105,7 +109,7 @@
 				<source src={AnimationMovieMP4} type="video/mp4" />
 			</video> 
 		</div> -->
-		
+
 		<div class="w-28 md:w-40 absolute bottom-0 right-0 mb-4 mr-4 z-20">
 			<a href="https://aid-lab.hfg-gmuend.de/" target="_blank" rel="noopener noreferrer">
 				<LabLogo />
@@ -129,7 +133,9 @@
 					<div class="md:col-span-2" />
 
 					<div class="-ml-[50%]">
-						<h1 class="z-20 reshape-title"><span class="inline-block -scale-x-100">re</span> shape</h1>
+						<h1 class="z-20 reshape-title">
+							<span class="inline-block -scale-x-100">re</span> shape
+						</h1>
 						<h2 class="z-20 reshape-subtitle">
 							Forum for Artificial Intelligence<br />in Art and Design
 						</h2>
@@ -144,11 +150,11 @@
 			<div class="relative w-full h-full min-h-[300px]">
 				{#each emojis as emoji, i}
 					<img
-						class="floating{[i+1]} w-20 h-20"
-						style="position: absolute; top: {emojiPositions[i].top}; left: {emojiPositions[i].left};"
-						src="images/{[i+1]}.png"
+						class="floating{[i + 1]} w-20 h-20"
+						style="position: absolute; top: {emojiPositions[i].top}; left: {emojiPositions[i]
+							.left};"
+						src="images/{[i + 1]}.png"
 						alt="Floating {emojis[i]} emoji"
-
 					/>
 				{/each}
 			</div>
@@ -159,13 +165,15 @@
 				</h1>
 
 				<!-- Content Columns -->
-				
-					<p class="reshape-copy">
-						Join us at the <span class="inline-block -scale-x-100">re</span> shape Forum for Artificial Intelligence in Art and Design. A dynamic two-day convergence where AI and creative practice intersect. This forum brings together leading thinkers who critically examine the role of AI in shaping design practice, ethical frameworks, and user experiences. Through speculative approaches, narrative exploration, and critical engineering, these experts challenge dominant paradigms and propose new ways of engaging with technology.
-						
-					</p>
-					
-				
+
+				<p class="reshape-copy">
+					Join us at the <span class="inline-block -scale-x-100">re</span> shape Forum for Artificial
+					Intelligence in Art and Design. A dynamic two-day convergence where AI and creative practice
+					intersect. This forum brings together leading thinkers who critically examine the role of AI
+					in shaping design practice, ethical frameworks, and user experiences. Through speculative approaches,
+					narrative exploration, and critical engineering, these experts challenge dominant paradigms
+					and propose new ways of engaging with technology.
+				</p>
 			</div>
 		</div>
 	</section>
@@ -306,31 +314,63 @@
 	}
 
 	@keyframes floating1 {
-		0% { transform: translate3d(0, 0, 0) rotate(0deg); }
-		33% { transform: translate3d(-10px, -15px, 0) rotate(-5deg); }
-		66% { transform: translate3d(15px, -5px, 0) rotate(5deg); }
-		100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+		0% {
+			transform: translate3d(0, 0, 0) rotate(0deg);
+		}
+		33% {
+			transform: translate3d(-10px, -15px, 0) rotate(-5deg);
+		}
+		66% {
+			transform: translate3d(15px, -5px, 0) rotate(5deg);
+		}
+		100% {
+			transform: translate3d(0, 0, 0) rotate(0deg);
+		}
 	}
 
 	@keyframes floating2 {
-		0% { transform: translate3d(0, 0, 0) rotate(0deg); }
-		33% { transform: translate3d(15px, 10px, 0) rotate(8deg); }
-		66% { transform: translate3d(-8px, -12px, 0) rotate(-8deg); }
-		100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+		0% {
+			transform: translate3d(0, 0, 0) rotate(0deg);
+		}
+		33% {
+			transform: translate3d(15px, 10px, 0) rotate(8deg);
+		}
+		66% {
+			transform: translate3d(-8px, -12px, 0) rotate(-8deg);
+		}
+		100% {
+			transform: translate3d(0, 0, 0) rotate(0deg);
+		}
 	}
 
 	@keyframes floating3 {
-		0% { transform: translate3d(0, 0, 0) rotate(0deg); }
-		33% { transform: translate3d(-12px, -20px, 0) rotate(-10deg); }
-		66% { transform: translate3d(20px, -8px, 0) rotate(10deg); }
-		100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+		0% {
+			transform: translate3d(0, 0, 0) rotate(0deg);
+		}
+		33% {
+			transform: translate3d(-12px, -20px, 0) rotate(-10deg);
+		}
+		66% {
+			transform: translate3d(20px, -8px, 0) rotate(10deg);
+		}
+		100% {
+			transform: translate3d(0, 0, 0) rotate(0deg);
+		}
 	}
 
 	@keyframes floating4 {
-		0% { transform: translate3d(0, 0, 0) rotate(0deg); }
-		33% { transform: translate3d(8px, 5px, 0) rotate(5deg); }
-		66% { transform: translate3d(-5px, -8px, 0) rotate(-5deg); }
-		100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+		0% {
+			transform: translate3d(0, 0, 0) rotate(0deg);
+		}
+		33% {
+			transform: translate3d(8px, 5px, 0) rotate(5deg);
+		}
+		66% {
+			transform: translate3d(-5px, -8px, 0) rotate(-5deg);
+		}
+		100% {
+			transform: translate3d(0, 0, 0) rotate(0deg);
+		}
 	}
 
 	.floating1 {
