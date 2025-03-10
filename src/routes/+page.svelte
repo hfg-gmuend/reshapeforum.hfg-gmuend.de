@@ -257,7 +257,7 @@
 				<TeamTile name="Hartmut Bohnacker" description="Project lead" file="hartmut" />
 				<TeamTile name="Christopher Pietsch" description="Research Associate" file="chris" />
 				<TeamTile name="Moritz Hartstang" description="Research Associate" file="moritz" />
-				<TeamTile name="Maxime Beck" description="Research Associate" file="maxime" />
+				<TeamTile name="Maxime Beck" description="Intern" file="maxime" />
 			</div>
 		</div>
 	</section>

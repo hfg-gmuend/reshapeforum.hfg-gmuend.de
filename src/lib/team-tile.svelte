@@ -41,6 +41,6 @@
 		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-chris.jpg');
 	}
 	.maxime {
-		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-maxime.jpg');
+		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-maxime.png');
 	}
 </style>
