@@ -21,9 +21,9 @@
 	}}
 >
 	<span class="text-{color}" class:opacity-50={title === 'Break'}>
-		<span class="block reshape-lead-medium" class:expandable>{timeslot}</span>
+		<span class="block reshape-lead-medium">{timeslot}</span>
 		<span class="block">{title}</span>
-		<span class="block">{subtitle}</span></span
+		<span class="block" class:expandable>{subtitle}</span></span
 	>
 </p>
 
@@ -31,12 +31,16 @@
 	.expandable::after {
 		content: '';
 		display: inline-block;
-		width: 11px;
-		height: 11px;
+		width: 20px;
+		height: 20px;
 		background-image: url('/icon-expand.svg');
 		background-repeat: no-repeat;
-		margin-left: 3px;
+		background-size: contain;
+		vertical-align: middle;
 		color: 'red';
+		position: relative;
+		margin-left: 10px;
+		margin: 4px;
 	}
 
 	.text-reshape-gruen > .expandable::after {
