@@ -183,7 +183,7 @@
 	<section id="speakers" class="pt-[100px] mt-[200px]">
 		<div class="md:grid md:grid-cols-3 gap-10">
 			<div>
-				<h2 class="bg-orange-500 px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
+				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
 					Speakers
 				</h2>
 			</div>
@@ -202,25 +202,25 @@
 
 	<section id="program" class="pt-[100px] mt-[200px]">
 		<div>
-			<h2 class="bg-orange-500 px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
+			<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
 				Schedule
 			</h2>
 		</div>
-		<p class="mb-[55px] md:mb-[65px]">
+		<!-- <p class="mb-[55px] md:mb-[65px]">
 			May 14-16, 2025 <br /> (Wednesday - Friday)
-		</p>
+		</p> -->
 		<Schedule scheduleItems={ITEMS_WEDNESDAY} keyColor="reshape-lila">
-			<h3 slot="heading" class="text-orange-500 md:ml-8 text-4xl basis-1/2 mb-[55px] md:mb-0">
+			<h3 slot="heading" class="text-[#6a5b9e] md:ml-8 text-4xl basis-1/2 mb-[55px] md:mb-0">
 				Wednesday<br />May 14
 			</h3>
 		</Schedule>
 		<Schedule scheduleItems={ITEMS_THURSDAY} keyColor="reshape-blau">
-			<h3 slot="heading" class="text-orange-500 md:ml-8 text-4xl basis-1/2 mb-[55px] md:mb-0">
+			<h3 slot="heading" class="text-[#6a5b9e] md:ml-8 text-4xl basis-1/2 mb-[55px] md:mb-0">
 				Thursday<br />May 15
 			</h3></Schedule
 		>
 		<Schedule scheduleItems={ITEMS_FRIDAY} keyColor="reshape-gruen">
-			<h3 slot="heading" class="text-orange-500 md:ml-8 text-4xl basis-1/2 mb-[55px] md:mb-0">
+			<h3 slot="heading" class="text-[#6a5b9e] md:ml-8 text-4xl basis-1/2 mb-[55px] md:mb-0">
 				Friday<br />May 16
 			</h3>
 		</Schedule>
@@ -243,7 +243,7 @@
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
 			<div>
-				<h2 class="bg-orange-500 px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
+				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
 					AI+D Team
 				</h2>
 			</div>
@@ -264,7 +264,7 @@
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
 			<div>
-				<h2 class="bg-orange-500 px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
+				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
 					Contact
 				</h2>
 			</div>
