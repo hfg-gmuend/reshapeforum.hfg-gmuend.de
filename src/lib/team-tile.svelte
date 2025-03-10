@@ -5,7 +5,7 @@
 </script>
 
 <div class="reshape-copy">
-	<div class="border-black border rounded-full w-36 h-36 image {file}" />
+	<div class="border-black border-2 rounded-full w-36 h-36 image {file}" />
 	<p class=" mt-4 name">{name}</p>
 	<p>{description}</p>
 </div>
