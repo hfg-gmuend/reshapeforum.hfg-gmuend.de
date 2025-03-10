@@ -31,8 +31,9 @@
 	}
 
 	const menuItems = [
-		// { title: 'Programme', link: '#program' },
-		// { title: 'Registration', link: '#anmeldung' },
+		{ title: 'Speakers', link: '#speakers' },
+		{ title: 'Schedule', link: '#program' },
+		{ title: 'Tickets', link: 'https://www.eventbrite.com/e/reshape-2025-tickets-1251085563599' }
 		// { title: 'AI+D Lab', link: '#ai-d-lab' },
 		//{ title: 'KITeGG', link: '#kitegg' },
 		//{ title: '<span class="inline-block -scale-x-100">re</span> shape 2023', link: 'https://reshapeforum.hfg-gmuend.de/2023/' }
@@ -74,12 +75,13 @@
 >
 	<nav class="font-light w-full max-md:hidden">
 		<ul class="flex justify-between">
-			{#each menuItems.slice(0, Math.floor(menuItems.length / 2)) as item}
-				<li><a href={item.link} on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
-			{/each}
 			<li>
 				<a href="#" class="font-medium"><span class="inline-block -scale-x-100">re</span> shape</a>
 			</li>
+			{#each menuItems.slice(0, Math.floor(menuItems.length / 2)) as item}
+				<li><a href={item.link} on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
+			{/each}
+
 			{#each menuItems.slice(Math.floor(menuItems.length / 2)) as item}
 				<li><a href={item.link} on:click|preventDefault={scrollIntoView}>{item.title}</a></li>
 			{/each}
@@ -178,7 +180,7 @@
 		</div>
 	</section>
 
-	<section class="mt-[120px] md:mt-[250px]">
+	<section id="speakers" class="pt-[100px] mt-[200px]">
 		<div class="md:grid md:grid-cols-3 gap-10">
 			<div>
 				<h2 class="bg-orange-500 px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
@@ -198,10 +200,10 @@
 		</div>
 	</section>
 
-	<section id="program" class="pt-[250px]">
+	<section id="program" class="pt-[100px] mt-[200px]">
 		<div>
 			<h2 class="bg-orange-500 px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
-				Programme
+				Schedule
 			</h2>
 		</div>
 		<p class="mb-[55px] md:mb-[65px]">
@@ -222,7 +224,9 @@
 				Friday<br />May 16
 			</h3>
 		</Schedule>
-		<div id="anmeldung" class="inset-negative"><div class="seperator" /></div>
+		<div id="anmeldung" class="inset-negative">
+			<!-- <div class="seperator" /> -->
+		</div>
 		<!--<p
 			class="reshape-lead-medium md:reshape-desktop-lead-medium mt-[55px] md:mt-[120px] max-w-[900px]"
 		>
@@ -238,9 +242,32 @@
 
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
-			<h2 class="reshape-section-header md:reshape-desktop-section-header mb-[55px] md:mb-0">
-				Contact
-			</h2>
+			<div>
+				<h2 class="bg-orange-500 px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
+					AI+D Team
+				</h2>
+			</div>
+			<div
+				class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-[55px] md:gap-y-[65px] col-span-2"
+			>
+				<TeamTile name="Rahel Flechtner" description="Visiting professor" file="rahel" />
+				<TeamTile name="Jordi Tost" description="Visiting professor" file="jordi" />
+				<TeamTile name="Felix Sewing" description="AI+D Lab lead" file="felix" />
+				<TeamTile name="Benedikt Groß" description="Project lead" file="bene" />
+				<TeamTile name="Hartmut Bohnacker" description="Project lead" file="hartmut" />
+				<TeamTile name="Christopher Pietsch" description="Research Associate" file="chris" />
+				<TeamTile name="Moritz Hartstang" description="Research Associate" file="moritz" />
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
+			<div>
+				<h2 class="bg-orange-500 px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
+					Contact
+				</h2>
+			</div>
 			<p class="reshape-copy">
 				<span class="font-medium">Hoch­schule für Gestal­tung Schwä­bisch Gmünd</span>
 				<br />Univer­sity of Applied Sciences <br />Rektor-Klaus-Straße 100 <br />D‑73525
