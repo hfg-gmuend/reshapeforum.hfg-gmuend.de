@@ -386,9 +386,9 @@
 		}
 	}
 
-	.animation-fallback-gif-off {
+	/* .animation-fallback-gif-off {
 		background-image: url('$lib/assets/static-back.png');
-	}
+	} */
 
 	.big-link {
 		display: inline-block;

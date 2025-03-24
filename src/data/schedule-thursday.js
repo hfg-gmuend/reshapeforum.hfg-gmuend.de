@@ -9,13 +9,13 @@ export default [
 		timeslot: '09:45-10:00',
 		title: 'Opening Remarks',
 		subtitle: 'Welcome address by the symposium organizers',
-		description: `Welcome address by the symposium organizers. Pub 2 präsentieren`
+		description: ``
 	},
 	{
 		timeslot: '10:00-11:00',
 		title: 'Elisa Giaccardi',
 		subtitle: 'Design After Extraction: AI and the More-than-Human Turn',
-		description: `This keynote invites us to rethink the role of design and AI in a time of climate crisis. It shares how students are learning to move beyond human-centered thinking, collaborating with plants, fungi, animals, bacteria, and artificial intelligence to imagine regenerative futures where all forms of life can thrive. Rooted in a post-extraction ethos, the talk reimagines AI not as a tool of control, but as a partner in rebuilding our relationships with the planet.`
+		description: `This keynote invites us to rethink the role of design and AI in a time of climate crisis.It shares how students are learning to move beyond human- centered thinking, collaborating with plants, fungi, animals, bacteria, and artificial intelligence to imagine regenerative futures where all forms of life can thrive.Rooted in a post - extraction ethos, the talk reimagines AI not as a tool of control, but as a partner in rebuilding our relationships with the planet.`
 	},
 	{
 		timeslot: '11:00-11:30',
@@ -50,8 +50,8 @@ export default [
 	{
 		timeslot: '15:30-16:15',
 		title: 'TBA',
-		subtitle: 'XXX',
-		description: `XXX`
+		subtitle: '',
+		description: ``
 	},
 	{
 		timeslot: '16:15-16:45',

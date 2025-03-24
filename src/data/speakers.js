@@ -21,7 +21,7 @@ export default [
 		image: 'maria-luce-lupetti'
 	},
 	{
-		name: 'Niklas Muhs',
+		name: 'TBA',
 		subtitle: 'XXX',
 		description: `XXX`,
 		image: 'niklas-muhs'
@@ -34,7 +34,7 @@ export default [
 		image: 'iohanna-nicenboim'
 	},
 	{
-		name: 'Julian Oliver',
+		name: 'TBA',
 		subtitle: 'XXX',
 		description: `XXX`,
 		image: 'julian-oliver'

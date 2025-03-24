@@ -15,7 +15,7 @@
 	<div class="max-w-xs">
 		<div class="wrapper square">
 			<div
-				class="speaker-image border-{tint} bg-{tint} border-2 rounded-full speaker-{imageName}"
+				class="speaker-image border-[#6a5b9e] bg-[#6a5b9e] border-2 rounded-full speaker-{imageName}"
 			/>
 		</div>
 	</div>
@@ -48,7 +48,7 @@
 		background-blend-mode: screen;
 	}
 
-	/* .speaker-niko-klein {
+	.speaker-niko-klein {
 		background-image: url($lib/assets/speaker-portraits/niko-klein.jpg);
 	}
 
@@ -60,9 +60,9 @@
 		background-image: url($lib/assets/speaker-portraits/maria-luce-lupetti.jpg);
 	}
 
-	.speaker-niklas-muhs {
+	/* .speaker-niklas-muhs {
 		background-image: url($lib/assets/speaker-portraits/niklas-muhs.jpg);
-	}
+	} */
 
 	.speaker-elisa-giaccardi {
 		background-image: url($lib/assets/speaker-portraits/elisa-giaccardi.jpg);
@@ -71,10 +71,10 @@
 	.speaker-andreas-refsgaard {
 		background-image: url($lib/assets/speaker-portraits/andreas-refsgaard.jpg);
 	}
-
+	/* 
 	.speaker-julian-oliver {
 		background-image: url($lib/assets/speaker-portraits/julian-oliver.jpg);
-	}
+	} */
 
 	.speaker-iohanna-nicenboim {
 		background-image: url($lib/assets/speaker-portraits/iohanna-nicenboim.jpg);
@@ -82,7 +82,7 @@
 
 	.speaker-eryk-salvaggio {
 		background-image: url($lib/assets/speaker-portraits/eryk-salvaggio.jpg);
-	} */
+	}
 
 	.speaker-image:hover {
 		background-blend-mode: normal;
