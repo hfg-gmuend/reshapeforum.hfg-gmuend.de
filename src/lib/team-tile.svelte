@@ -26,10 +26,10 @@
 		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-rahel.jpg');
 	}
 	.jordi {
-		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-jordi.png');
+		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-jordi.jpg');
 	}
 	.moritz {
-		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-moritz.png');
+		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-moritz.jpg');
 	}
 	.bene {
 		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-bene.jpg');
