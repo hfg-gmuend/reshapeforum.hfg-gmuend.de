@@ -163,7 +163,8 @@
 			<div class="md:col-span-2">
 				<!-- Heading -->
 				<h1 class="text-5xl md:text-6xl leading-tight mb-12 text-gray-900">
-					How does Machine Learning reshape the landscape of art and design?
+					How does Machine Learning <span class="inline-block -scale-x-100">re</span> shape the landscape
+					of art and design?
 				</h1>
 
 				<!-- Content Columns -->
