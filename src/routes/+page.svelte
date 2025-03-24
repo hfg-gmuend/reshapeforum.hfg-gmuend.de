@@ -169,14 +169,13 @@
 				<!-- Content Columns -->
 
 				<p class="reshape-copy">
-					Join us on May 15–16 for the <span class="inline-block -scale-x-100">re</span>shape Forum
-					for Artificial Intelligence in Art and Design, where we’ll explore AI’s evolving role in
-					creativity, interaction, and society. From playful experiments that challenge conventional
-					AI use to critical discussions on its ethical and ecological impact, this event brings
-					together visionary designers, artists, and researchers. We’ll question dominant AI
-					narratives, rethink design beyond human-centered approaches, and imagine regenerative
-					futures where technology coexists with the more-than-human world. Be part of the
-					conversation as we reshape AI’s role in art, design, and beyond!
+					Join us on May 15–16 for the <span class="inline-block -scale-x-100">re</span> shape Forum
+					for Artificial Intelligence in Art and Design, where we’ll explore AI’s evolving role in creativity,
+					interaction, and society. From playful experiments that challenge conventional AI use to critical
+					discussions on its ethical and ecological impact, this event brings together visionary designers,
+					artists, and researchers. We’ll question dominant AI narratives, rethink design beyond human-centered
+					approaches, and imagine regenerative futures where technology coexists with the more-than-human
+					world. Be part of the conversation as we reshape AI’s role in art, design, and beyond!
 				</p>
 			</div>
 		</div>
