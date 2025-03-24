@@ -21,9 +21,9 @@ export default [
 		image: 'maria-luce-lupetti'
 	},
 	{
-		name: 'TBA',
-		subtitle: 'XXX',
-		description: `XXX`,
+		name: 'Niklas Muhs',
+		subtitle: 'How Do We Want to Interface With AI?',
+		description: `Niklas Muhs is a designer focused on creating new ways for people to interact with AI. As the first designer at Mistral AI, he shaped experiences tailored to consumers, developers, and scientists, collaborating closely with researchers to explore AI interactions. Previously, he conducted research at the MIT Media Lab’s Fluid Interfaces group and the AI+D Lab, bridging AI, design, and cognitive science. At Intuity, Niklas designed and developed AI systems for large-scale enterprises, exploring the boundaries of applied AI in industry contexts.`,
 		image: 'niklas-muhs'
 	},
 	{

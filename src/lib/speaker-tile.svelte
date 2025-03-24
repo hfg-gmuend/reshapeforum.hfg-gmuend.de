@@ -60,9 +60,9 @@
 		background-image: url($lib/assets/speaker-portraits/maria-luce-lupetti.jpg);
 	}
 
-	/* .speaker-niklas-muhs {
+	.speaker-niklas-muhs {
 		background-image: url($lib/assets/speaker-portraits/niklas-muhs.jpg);
-	} */
+	}
 
 	.speaker-elisa-giaccardi {
 		background-image: url($lib/assets/speaker-portraits/elisa-giaccardi.jpg);

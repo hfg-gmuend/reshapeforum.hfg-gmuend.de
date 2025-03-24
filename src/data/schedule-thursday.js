@@ -49,9 +49,9 @@ export default [
 	},
 	{
 		timeslot: '15:30-16:15',
-		title: 'TBA',
-		subtitle: '',
-		description: ``
+		title: 'Niklas Muhs',
+		subtitle: 'How Do We Want to Interface With AI?',
+		description: `An exploration of how the inner workings of AI models affect user experiences. We'll discuss alternative approaches to agents and conversational interfaces, and explore new ways for humans to work with AI.`
 	},
 	{
 		timeslot: '16:15-16:45',
