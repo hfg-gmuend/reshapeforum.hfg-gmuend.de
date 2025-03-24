@@ -38,7 +38,7 @@ export default [
 	{
 		timeslot: '13:15-13:30',
 		title: 'Closing Remarks',
-		subtitle: 'Summary and Future Directions',
-		description: ``
+		subtitle: 'Summary of key takeaways and future directions',
+		description: `Transform Trier - Simon Maris`
 	}
 ];
