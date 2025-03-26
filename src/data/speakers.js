@@ -33,12 +33,12 @@ export default [
 		bio: `Iohanna Nicenboim is a postdoctoral researcher at Delft University of Technology, where she completed her PhD with honors as a Microsoft Research Fellow. Her current research explores Regenerative AI and More-than-Human Design sensibilities. Over the past eight years, she has developed a More-than-Human Design approach to AI (Designing-with AI), publishing extensively in international journals and organizing workshops and panels at leading conferences. She also co-edited a special issue of the HCI Journal on the More-than-Human Turn in Design. With a multidisciplinary career spanning art, design, industry, and academia, Iohanna brings a unique perspective to the intersection of technology and more-than-human interactions.`,
 		image: 'iohanna-nicenboim'
 	},
-	{
-		name: 'TBA',
-		subtitle: 'XXX',
-		description: `XXX`,
-		image: 'julian-oliver'
-	},
+	// {
+	// 	name: 'TBA',
+	// 	subtitle: 'XXX',
+	// 	description: `XXX`,
+	// 	image: 'julian-oliver'
+	// },
 	{
 		name: 'Andreas Refsgaard',
 		subtitle: 'Beyond prompting - silly interactive AI',

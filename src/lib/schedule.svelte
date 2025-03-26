@@ -19,8 +19,8 @@
 	}
 </script>
 
-<article class=" background-motive-{bgMotive} inset-negative py-[55px] md:py-[65px]">
-	<div class="inset md:grid md:grid-cols-3 gap-10">
+<article class="background-motive-{bgMotive}my-[55px] md:my-[65px]">
+	<div class="md:grid md:grid-cols-3 gap-10">
 		<slot name="heading" />
 		<ul class="time-table reshape-lead-light md:col-span-2">
 			{#each scheduleItems as item, i}

@@ -182,7 +182,7 @@
 		</div>
 	</section>
 
-	<section id="speakers" class="pt-[100px] mt-[200px]">
+	<section id="speakers" class="mt-3">
 		<div class="md:grid md:grid-cols-3 gap-10">
 			<div>
 				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
@@ -202,9 +202,9 @@
 		</div>
 	</section>
 
-	<section id="program" class="pt-[100px] mt-[200px]">
+	<section id="program" class="md:mt-[100px] mt-10">
 		<div>
-			<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
+			<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[40px] text-4xl inline-block">
 				Schedule
 			</h2>
 		</div>
@@ -245,7 +245,7 @@
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
 			<div>
-				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
+				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[40px] text-4xl inline-block">
 					AI+D Team
 				</h2>
 			</div>
