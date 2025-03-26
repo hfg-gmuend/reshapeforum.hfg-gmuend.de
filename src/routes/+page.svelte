@@ -243,7 +243,7 @@
 	</section>
 
 	<section id="kitegg">
-		<div class="md:grid md:grid-cols-3 gap-10 pt-[80px] md:pt-[120px]">
+		<div class="md:grid md:grid-cols-3 gap-10 pt-[80px] md:pt-[80px]">
 			<div>
 				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[40px] text-4xl inline-block">
 					<a href="https://gestaltung.ai" target="_blank" rel="noopener noreferrer">KITeGG</a>
@@ -277,7 +277,7 @@
 		</div>
 	</section>
 	<section>
-		<div class="md:grid md:grid-cols-3 gap-10 pt-[80px] md:pt-[250px]" id="ai-d-lab">
+		<div class="md:grid md:grid-cols-3 gap-10 pt-[80px] md:pt-[150px]" id="ai-d-lab">
 			<div>
 				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[40px] text-4xl inline-block">
 					AI+D Lab
@@ -306,7 +306,7 @@
 	</section>
 
 	<section>
-		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
+		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[150px]">
 			<div>
 				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[40px] text-4xl inline-block">
 					AI+D Team
@@ -332,7 +332,7 @@
 	</section>
 
 	<section>
-		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
+		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[150px]">
 			<div>
 				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
 					Contact
