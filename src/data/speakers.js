@@ -8,7 +8,7 @@ export default [
 	{
 		name: 'Niko Klein',
 		subtitle: 'Lighting a fire with damp wood.',
-		description: `After graduating in 2017 from the HfG Schwäbisch Gmünd, Niko has worked since 2018 on Figma's editor, with a constant focus on prototyping features.`,
+		description: `Niko is going to talk about how the role of prototyping is changing alongside recent and future developments in AI.`,
 		image: 'niko-klein'
 	},
 	{
