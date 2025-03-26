@@ -242,6 +242,69 @@
 		</p> -->
 	</section>
 
+	<section id="kitegg">
+		<div class="md:grid md:grid-cols-3 gap-10 pt-[80px] md:pt-[120px]">
+			<div>
+				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[40px] text-4xl inline-block">
+					<a href="https://gestaltung.ai" target="_blank" rel="noopener noreferrer">KITeGG</a>
+				</h2>
+			</div>
+			<div class="md:col-span-2">
+				<!-- Heading -->
+				<h1 class="text-5xl md:text-6xl leading-tight mb-12 text-gray-900">
+					KITeGG - A collaborative project of five universities for the integration of AI in the
+					design teaching.
+				</h1>
+
+				<p class="reshape-copy">
+					The joint project "KITeGG - Making AI tangible and comprehensible: Connecting technology
+					and society through design" explores how AI can be integrated into design education.
+					Project partners are the Mainz University of Applied Sciences, the Offenbach University of
+					Art and Design, the Schwäbisch Gmünd University of Applied Design, the Cologne
+					International School of Design and the Trier University of Applied Sciences.
+				</p>
+
+				<p class="reshape-copy mt-[25px] md:mt-0">
+					As “designers of the future” students should have knowledge of current and future relevant
+					technologies as well as profound technical knowledge and the ability to systematically
+					consider user contexts and ethical and legal issues. They should be able to use machine
+					learning reflectively as a tool and material for design. To this end, new teaching
+					formats, tools, symposia and publications are to be developed within the framework of the
+					project over the next three years. KITeGG is one of over 50 funded projects within the
+					framework of the funding initiative "Künstliche Intelligenz in der Hochschulbildung".
+				</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="md:grid md:grid-cols-3 gap-10 pt-[80px] md:pt-[250px]" id="ai-d-lab">
+			<div>
+				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[40px] text-4xl inline-block">
+					AI+D Lab
+				</h2>
+			</div>
+			<div class="md:col-span-2">
+				<p class="reshape-copy">
+					The AI+D Lab is the place at HfG Schwäbisch Gmünd for research and teaching that combines
+					artificial intelligence and design. In the form of generated images and videos,
+					intelligent sensor systems and language-based interfaces, Machine Learning will be
+					increasingly used in design practice. We will explore the possibilities and challenges of
+					artificial intelligence in design: How can AI technologies be integrated into the design
+					process and how does this change the work of designers? What role can designers play in
+					the (co-)design of AI-based applications and how do they need to be prepared for this in
+					their education and how can we design desirable futures with AI technologies?
+				</p>
+				<p class="reshape-copy mt-[25px] md:mt-0">
+					In order to be able to use AI technologies in the design process, it is important to build
+					up sound knowledge about the possibilities and limitations of this technology. As a
+					physical location, the lab is the first point of contact for students and teachers and
+					provides the technical infrastructure for projects and experiments with different AI
+					models and technologies. The AI+D Lab is part of KITeGG.
+				</p>
+			</div>
+		</div>
+	</section>
+
 	<section>
 		<div class="md:grid md:grid-cols-3 gap-10 mt-[80px] md:mt-[250px]">
 			<div>
