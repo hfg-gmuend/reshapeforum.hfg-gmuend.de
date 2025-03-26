@@ -5,7 +5,7 @@
 </script>
 
 <div class="reshape-copy">
-	<div class="border-black border rounded-2xl w-36 h-36 image {file}" />
+	<div class="border-black border-2 rounded-full w-36 h-36 image {file}" />
 	<p class=" mt-4 name">{name}</p>
 	<p>{description}</p>
 </div>
@@ -25,11 +25,11 @@
 	.rahel {
 		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-rahel.jpg');
 	}
-	.aeneas {
-		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-aeneas.jpg');
+	.jordi {
+		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-jordi.jpg');
 	}
-	.alexa {
-		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-alexa.jpg');
+	.moritz {
+		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-moritz.jpg');
 	}
 	.bene {
 		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-bene.jpg');
@@ -39,5 +39,8 @@
 	}
 	.chris {
 		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-chris.jpg');
+	}
+	.maxime {
+		background-image: url('$lib/assets/ai-d-portraits/ai-d-portrait-maxime.png');
 	}
 </style>

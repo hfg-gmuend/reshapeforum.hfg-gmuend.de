@@ -1,44 +1,86 @@
 export default [
 	{
-		timeslot: '09:30-10:30',
-		title: 'Nadia Piet',
-		subtitle: 'UX of AI',
-		description: `Designing AI/ML-driven applications is different from designing event posters or more static mobile apps. Designing the user experience of adaptive, intelligent, and semi-autonomous systems present a range of new challenges for us designers to take on. This talk introduces you to exactly that - ranging from interactions around explainability and user feedback mechanisms, to greater ethical challenges such as echo chambers and data bias 📈 We also look at UX as having great potential to shape algorithmic interactions for the better and close the gap between the abstract promises of ethical AI principles and people’s lived experience. If you're looking to deepen your understanding of design for AI and how design(ers) can shape the course of AI, this one is for you!`
+		timeslot: '09:30-09:45',
+		title: 'Arrival and Coffee',
+		subtitle: '',
+		description: ``
 	},
 	{
-		timeslot: '10:30-11:30',
-		title: 'Catherine Breslin',
-		subtitle: 'Conversational Design for Voice Assistants',
-		description: `With the rise of voice interfaces, it's clear that conversation design is a big part of building a successful interface. This talk will cover how people converse, how that inspires the current voice assistant technology, and how LLMs or other developments might change voice assistants in the future.`
+		timeslot: '09:45-10:00',
+		title: 'Opening Remarks',
+		subtitle: 'Welcome address by the symposium organizers',
+		description: ``
 	},
 	{
-		timeslot: '12:00-13:00',
-		title: 'Ploipailin Flynn',
-		subtitle: 'Mirror mirror: Reflections on “accidentally” discriminatory AI outcomes',
-		description: `Ploipailin Flynn is a business and product strategist interested in the design and build of radically equitable and antiracist futures. She got tired of well-designed tech products and services that turned "accidentally" racist, so she launched ANTI ( antiracistby.design ) as a place of reference for business and product leads to build things that are antiracist by design. Her areas of interest include: The relationship between revenue models and discriminatory design. Antiracist and decolonial futures. Translating abstract principles into tangible products and services. Researching the intersectional impacts of Big Tech, AI, capitalism. `
+		timeslot: '10:00-11:00',
+		title: 'Elisa Giaccardi',
+		subtitle: 'Design After Extraction: AI and the More-than-Human Turn',
+		description: `This keynote invites us to rethink the role of design and AI in a time of climate crisis.It shares how students are learning to move beyond human- centered thinking, collaborating with plants, fungi, animals, bacteria, and artificial intelligence to imagine regenerative futures where all forms of life can thrive.Rooted in a post - extraction ethos, the talk reimagines AI not as a tool of control, but as a partner in rebuilding our relationships with the planet.`
 	},
 	{
-		timeslot: '13:00-14:00',
-		title: 'Lunch',
-		subtitle: ''
+		timeslot: '11:00-11:30',
+		title: 'Break',
+		subtitle: '',
+		description: ``
+	},
+	{
+		timeslot: '11:30-12:30',
+		title: 'Tobias Revell',
+		subtitle: 'Design and the Social Construction of Artificial Intelligence',
+		description: `As futures are increasingly foreclosed by dominant tech narratives of power, speed, efficiency and consumption it's increasingly important to question the role of design in constructing and telling these stories. This talk addresses some of the strategies and techniques used in constructing future imaginaries of AI through design and explores ways in which the critical practice of design can be used to challenge, problematise and reveal these dominant narratives as well as propose alternatives.`
+	},
+	{
+		timeslot: '12:30-14:00',
+		title: 'Lunch Break',
+		subtitle: '',
+		description: ``
 	},
 	{
 		timeslot: '14:00-15:00',
-		title: 'Emily Saltz',
-		subtitle: 'AI Safety & Disclosure in Product Design: Practices in Flux',
-		description: `In just a few months time as tools like DALL•E and ChatGPT went mainstream, safety considerations and UX best practices for using AI-generated image and text outputs went  from theoretical to urgent. I'll discuss my firsthand experience developing UX guidelines for labeling of manipulated and synthetic media, and reflect on the evolving considerations and adversarial "anti-personas" as the technology has become more accessible. I'll also discuss how designers and researchers might think about AI safety across the design process, from model training and prompt engineering to guardrails and disclosure for user-facing outputs.`
+		title: 'Maria Luce Lupetti',
+		subtitle: 'Drawing windows into better timelines',
+		description: `As we live in times of extreme uncertainty and we witness brutality we didn't even know was possible today, a general feeling catches on: we must have ended in the wrong timeline. The land burns and floods, war is at our door, oppressed have become oppressors, and engineering luminaries have turned into bullies. As designers, we find ourselves caught between recognizing our role in global crises and the relentless demand to produce and deliver. Echoing Aurélia de Azambuja's poignant question—"How do we make the logo bigger when the world is burning?"—this talk explores the intersection of media discourse, technological innovation, and the urgent challenges of our time. Through this lens, we will critically examine the narratives shaping our present and seek windows into better timelines.`
 	},
 	{
-		timeslot: '15:00-16:30',
-		title: 'Panel',
-		subtitle: 'AI Industry - professional requirements and fields of activity for designers',
-		description: `What will "working with AI" actually look like after graduation? What are concrete job descriptions for designers? What do they need to know about AI to be able to responsibly co-design AI-based products and services? What emergent fields of activity exist beyond product development, e.g. research, consulting etc.? 
-		<br/> <br/>Moderator: Benedikt Groß<br/><br/> Panelists:<br/><br/> - Nadia Piet (AIxDesign)<br/>- Norbert Riedelsheimer (IBM Client Engineering, Munich) <br/>- Roman Stefan Grasy (Intuity Media Lab, Stuttgart) <br/> - Prof. Dr. rer. nat. Wolfgang Ertel (RWU Ravensburg-Weingarten)`
+		timeslot: '15:00-15:30',
+		title: 'Break',
+		subtitle: '',
+		description: ``
 	},
 	{
-		timeslot: '17:00-18:00',
-		title: 'oio (Matteo Loglio and Simone Rebaudengo)',
-		subtitle: 'Future Everyday Products',
-		description: `oio is a creative company on a quest to turn emerging technologies into an approachable, everyday and sustainable reality. It’s a small team of humans and machines pushing for an impact that outweighs their footprint, shaping future products and narratives for what could be our future. They just launched their first product, designed in collaboration with an AI in a new process they coined as “Artisanal Intelligence”. Constantly pushing the boundaries of post-human collaborations, oio works with big companies, small startups and cultural institutions to shape products and tools for a less-boring future. Some of their collaborations include IKEA, Google, SPACE10, FABRICA, the Museum of the Future, Arduino and Samsung among others.`
+		timeslot: '15:30-16:15',
+		title: 'Niklas Muhs',
+		subtitle: 'How Do We Want to Interface With AI?',
+		description: `An exploration of how the inner workings of AI models affect user experiences. We'll discuss alternative approaches to agents and conversational interfaces, and explore new ways for humans to work with AI.`
+	},
+	{
+		timeslot: '16:15-16:45',
+		title: 'Break',
+		subtitle: '',
+		description: ``
+	},
+	{
+		timeslot: '16:45-17:45',
+		title: 'Eryk Salvaggio',
+		subtitle: 'Feel the Noise: Notes from an Adversarial AI Artist',
+		description: `Eryk Salvaggio's artworks use AI to work against AI. Favoring an adversarial, rather than "collaborative" position, creates ways of "removing the imagination" of what AI is, in order to see the truth of what it does and is more clearly. Beyond simple opposition, this practice creates opportunities for more nuanced claims about what defines the human when it is removed from the isolating context of rationality, efficiency, and productivity.`
+	},
+	{
+		timeslot: '17:45-18:15',
+		title: 'Break',
+		subtitle: '',
+		description: ``
+	},
+	{
+		timeslot: '18:15-19:00',
+		title: 'Niko Klein',
+		subtitle: 'Lighting a fire with damp wood.',
+		description: `Niko is going to talk about how the role of prototyping is changing alongside recent and future developments in AI.`
+	},
+	{
+		timeslot: '19:00-19:15',
+		title: 'Closing Remarks',
+		subtitle: '',
+		description: ``
 	}
 ];

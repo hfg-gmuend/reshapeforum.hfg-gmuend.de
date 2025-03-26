@@ -14,7 +14,9 @@
 	<!-- End of rather ugly hack -->
 	<div class="max-w-xs">
 		<div class="wrapper square">
-			<div class="speaker-image border-{tint} bg-{tint} border-2 rounded-2xl speaker-{imageName}" />
+			<div
+				class="speaker-image border-[#6a5b9e] bg-[#6a5b9e] border-2 rounded-full speaker-{imageName}"
+			/>
 		</div>
 	</div>
 
@@ -41,58 +43,45 @@
 		right: 0;
 		bottom: 0;
 		background-image: url($lib/assets/form-background.png);
-		background-size: contain;
+		background-size: cover;
 		background-repeat: no-repeat;
 		background-blend-mode: screen;
 	}
 
-	.speaker-emily-saltz {
-		background-image: url($lib/assets/speaker-portraits/emily-saltz.png);
+	.speaker-niko-klein {
+		background-image: url($lib/assets/speaker-portraits/niko-klein.jpg);
 	}
 
-	.speaker-simon-maris {
-		background-image: url($lib/assets/speaker-portraits/simon-maris.jpg);
+	.speaker-tobias-revell {
+		background-image: url($lib/assets/speaker-portraits/tobias-revell.jpg);
+	}
+
+	.speaker-maria-luce-lupetti {
+		background-image: url($lib/assets/speaker-portraits/maria-luce-lupetti.jpg);
+	}
+
+	.speaker-niklas-muhs {
+		background-image: url($lib/assets/speaker-portraits/niklas-muhs.jpg);
+	}
+
+	.speaker-elisa-giaccardi {
+		background-image: url($lib/assets/speaker-portraits/elisa-giaccardi.jpg);
 	}
 
 	.speaker-andreas-refsgaard {
 		background-image: url($lib/assets/speaker-portraits/andreas-refsgaard.jpg);
 	}
+	/* 
+	.speaker-julian-oliver {
+		background-image: url($lib/assets/speaker-portraits/julian-oliver.jpg);
+	} */
 
-	.speaker-nadia-piet {
-		background-image: url($lib/assets/speaker-portraits/nadia-piet.jpg);
+	.speaker-iohanna-nicenboim {
+		background-image: url($lib/assets/speaker-portraits/iohanna-nicenboim.jpg);
 	}
 
-	.speaker-catherine-breslin {
-		background-image: url($lib/assets/speaker-portraits/catherine-breslin.jpg);
-	}
-
-	.speaker-ploipailin-flynn {
-		background-image: url($lib/assets/speaker-portraits/ploipailin-flynn.jpg);
-	}
-
-	.speaker-o-io {
-		background-image: url($lib/assets/speaker-portraits/o-io.jpg);
-	}
-
-	.speaker-tom-white {
-		background-image: url($lib/assets/speaker-portraits/tom-white.jpg);
-	}
-
-	.speaker-wolfgang-ertel {
-		background-image: url($lib/assets/speaker-portraits/wolfgang-ertel.jpg);
-		background-size: cover;
-	}
-
-	.speaker-prompt-battle {
-		background-image: url($lib/assets/speaker-portraits/prompt-battle.jpg);
-	}
-
-	.speaker-roman-grasy {
-		background-image: url($lib/assets/speaker-portraits/roman-grasy.jpg);
-	}
-
-	.speaker-norbert-riedelsheimer {
-		background-image: url($lib/assets/speaker-portraits/norbert-riedelsheimer.jpg);
+	.speaker-eryk-salvaggio {
+		background-image: url($lib/assets/speaker-portraits/eryk-salvaggio.jpg);
 	}
 
 	.speaker-image:hover {

@@ -26,7 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"siema": "^1.5.1",
-		"chroma-js": "^2.4.2"
+		"chroma-js": "^2.4.2",
+		"siema": "^1.5.1"
 	}
 }

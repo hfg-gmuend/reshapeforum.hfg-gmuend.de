@@ -22,7 +22,7 @@
 <article class=" background-motive-{bgMotive} inset-negative py-[55px] md:py-[65px]">
 	<div class="inset md:grid md:grid-cols-3 gap-10">
 		<slot name="heading" />
-		<ul class="time-table reshape-lead-light">
+		<ul class="time-table reshape-lead-light md:col-span-2">
 			{#each scheduleItems as item, i}
 				<li class="mb-[55px] md:mb-[55px]">
 					<ScheduleItem
@@ -34,14 +34,14 @@
 						on:click={() => toggle(i)}
 					/>
 					{#if i === expandedIndex}
-						<div class="md:hidden mt-4">
+						<div class="mt-4">
 							<p class="reshape-copy">{@html expandedDescription}</p>
 						</div>
 					{/if}
 				</li>
 			{/each}
 		</ul>
-		<div><p class="reshape-copy max-md:hidden">{@html expandedDescription}</p></div>
+		<!-- <div><p class="reshape-copy max-md:hidden">{@html expandedDescription}</p></div> -->
 	</div>
 </article>
 

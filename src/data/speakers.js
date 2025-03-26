@@ -1,79 +1,63 @@
 export default [
 	{
-		name: 'Nadia Piet',
-		subtitle: 'AIxDESIGN',
-		description: `Nadia Piet is an independent designer, researcher, organizer, and educator with a focus on AI/ML, data, tech, [digital] culture and creativity. She’s the founder of AIxDESIGN [a community of practitioners & living lab for beyond-corporate AI], holds an MA in Data-Driven Design, and explores playful & purposeful tech through freelance projects and self-initiated experiments. Over the past 10 years, she’s worked as Head of Creative Technology at DEPT [a global digital agency], design researcher for emerging technologies at Bit, and across roles and continents with organizations such as Hyper Island, Pi Campus, Forbes, UN, AWWWARDS, DECODED, MOBGEN | Accenture Interactive, Mozilla, and ICO.`,
-		image: 'nadia-piet'
+		name: 'Elisa Giaccardi',
+		subtitle: 'Design After Extraction: AI and the More-than-Human Turn',
+		description: `This keynote invites us to rethink the role of design and AI in a time of climate crisis. It shares how students are learning to move beyond human-centered thinking, collaborating with plants, fungi, animals, bacteria, and artificial intelligence to imagine regenerative futures where all forms of life can thrive. Rooted in a post-extraction ethos, the talk reimagines AI not as a tool of control, but as a partner in rebuilding our relationships with the planet.`,
+		bio: `Elisa Giaccardi is Full Professor of Design at Politecnico di Milano and 2024 Ambassador of Italian Design in the World. Her international career spans five countries and 25 years of research at the intersection of design, technology, and post-humanist thought. Over the years, she has co-founded and contributed to several interdisciplinary research and educational programs across the world. She now leads the Design Intelligences Institute, a multispecies collective addressing planetary challenges through more-than-human design.`,
+		image: 'elisa-giaccardi'
 	},
 	{
-		name: 'Matteo Loglio & Simone Rebaudengo',
-		subtitle: 'oio',
-		description: `oio is a creative company on a quest to turn emerging technologies into an approachable, everyday and sustainable reality. It’s a small team of humans and machines pushing for an impact that outweighs their footprint, shaping future products and narratives for what could be our future. They just launched their first product, designed in collaboration with an AI in a new process they coined as “Artisanal Intelligence”. Constantly pushing the boundaries of post-human collaborations, oio works with big companies, small startups and cultural institutions to shape products and tools for a less-boring future. Some of their collaborations include IKEA, Google, SPACE10, FABRICA, the Museum of the Future, Arduino and Samsung among others. `,
-		image: 'o-io'
+		name: 'Niko Klein',
+		subtitle: 'Lighting a fire with damp wood.',
+		description: `Niko is going to talk about how the role of prototyping is changing alongside recent and future developments in AI.`,
+		bio: `After graduating in 2017 from the HfG Schwäbisch Gmünd, Niko has worked since 2018 on Figma's editor, with a constant focus on prototyping features.`,
+		image: 'niko-klein'
 	},
 	{
-		name: 'Prof. Dr. Wolfgang Ertel',
-		subtitle: 'RWU Ravensburg-Weingarten',
-		description: `Prof. Dr. Wolfgang Ertel established the Institute for Artificial Intelligence at the Ravensburg-Weingarten University of Applied Sciences. He studied physics and mathematics in Konstanz and has been a researcher in artificial intelligence since 1987. His areas of expertise are machine learning and adaptive robots. After many research projects about service robots, adaptive machines and diagnostic systems he now works on AI and the future of humanity. He teaches artificial intelligence, machine learning, mathematics and sustainability. He wrote a textbook on artificial intelligence with translations into English, Chinese, Russian, Greek and Turkish. At Scientists for Future he is committed to climate and environmental protection.`,
-		image: 'wolfgang-ertel'
+		name: 'Maria Luce Lupetti',
+		subtitle: 'Drawing windows into better timelines',
+		description: `As we live in times of extreme uncertainty and we witness brutality we didn't even know was possible today, a general feeling catches on: we must have ended in the wrong timeline. The land burns and floods, war is at our door, oppressed have become oppressors, and engineering luminaries have turned into bullies. As designers, we find ourselves caught between recognizing our role in global crises and the relentless demand to produce and deliver. Echoing Aurélia de Azambuja's poignant question—"How do we make the logo bigger when the world is burning?"—this talk explores the intersection of media discourse, technological innovation, and the urgent challenges of our time. Through this lens, we will critically examine the narratives shaping our present and seek windows into better timelines.`,
+		bio: `Maria Luce Lupetti is an Assistant Professor in Interaction and Critical Design at the Department of Architecture and Design at Politecnico di Torino. Her research is concerned with all matters of human entanglement with the artificial world, especially concerning complex technologies such as AI and robotics. She is the PI of "Participatory Design Justice for Ethical AI Transitions'' a three-year project funded by the Italian Ministry of Education and Research, under the FIS2 program. She also serves as Exhibit X section editor for ACM Interactions Mag.`,
+		image: 'maria-luce-lupetti'
 	},
 	{
-		name: 'Ploipailin Flynn',
-		subtitle: 'antiracistby.design',
-		description: `Ploipailin Flynn is a business and product strategist interested in the design and build of radically equitable and antiracist futures. She got tired of well-designed tech products and services that turned "accidentally" racist, so she launched ANTI (<a href="http://antiracistby.design" target="_blank" rel="noopener noreferrer" class="underline">antiracistby.design</a> ) as a place of reference for business and product leads to build things that are antiracist by design. Her areas of interest include: The relationship between revenue models and discriminatory design. Antiracist and decolonial futures. Translating abstract principles into tangible products and services. Researching the intersectional impacts of Big Tech, AI, capitalism. `,
-		image: 'ploipailin-flynn'
+		name: 'Niklas Muhs',
+		subtitle: 'How Do We Want to Interface With AI?',
+		description: `Niklas Muhs is a designer focused on creating new ways for people to interact with AI. As the first designer at Mistral AI, he shaped experiences tailored to consumers, developers, and scientists, collaborating closely with researchers to explore AI interactions. Previously, he conducted research at the MIT Media Lab’s Fluid Interfaces group and the AI+D Lab, bridging AI, design, and cognitive science. At Intuity, Niklas designed and developed AI systems for large-scale enterprises, exploring the boundaries of applied AI in industry contexts.`,
+		image: 'niklas-muhs'
 	},
 	{
-		name: 'Roman Stefan Grasy',
-		subtitle: 'Intuity Media Lab, Stuttgart',
-		description: `Roman Stefan Grasy is unit lead for industrial applications @ Intuity Media Lab. He has been developing digital products and services at Intuity since 2012. As expert for digital manufacturing solutions and medical technologies he coordinates multi-disciplinary teams consisting of designers, data science experts and developers.`,
-		image: 'roman-grasy'
+		name: 'Iohanna Nicenboim',
+		subtitle: 'Designing-with AI',
+		description: `This talk challenges us to rethink AI design by shifting from human-centered to more-than-human perspectives through experimental projects in conversational AI. It invites critical reflection on the question, "Who is centered in human-centered AI?" and explores alternative approaches that engage more-than-human voices, fostering AI systems that are more inclusive and relational.`,
+		bio: `Iohanna Nicenboim is a postdoctoral researcher at Delft University of Technology, where she completed her PhD with honors as a Microsoft Research Fellow. Her current research explores Regenerative AI and More-than-Human Design sensibilities. Over the past eight years, she has developed a More-than-Human Design approach to AI (Designing-with AI), publishing extensively in international journals and organizing workshops and panels at leading conferences. She also co-edited a special issue of the HCI Journal on the More-than-Human Turn in Design. With a multidisciplinary career spanning art, design, industry, and academia, Iohanna brings a unique perspective to the intersection of technology and more-than-human interactions.`,
+		image: 'iohanna-nicenboim'
 	},
 	{
-		name: 'Catherine Breslin',
-		subtitle: 'Conversational AI',
-		description: `Dr Catherine Breslin is a machine learning scientist and consultant based in Cambridge UK, and founder of Kingfisher Labs consulting. Since completing her PhD at the University of Cambridge in 2008, she has commercial and academic experience of automatic speech recognition, natural language understanding and human-computer dialogue systems, having previously worked at at Cambridge University, Toshiba Research, Amazon Alexa, and Cobalt Speech. She's excited by the application of research to real-world problems involving speech and language at scale.`,
-		image: 'catherine-breslin'
-	},
-
-	{
-		name: 'Simon Maris',
-		subtitle: 'AI x Design x Sustainability',
-		description: `Simon Maris is currently Professor (by proxy ~ in Vertretung) of AI - Design and Sustainability at the Department of Art and Design at the University of Applied Sciences Trier. He explores, questions, makes. Trained as an architect, he has long been fascinated by technology and it's intersection with society and art, with a particular focus on computational design, digital fabrication, robotics and more recently AI systems. He co-hosts the towards co-creation podcast.`,
-		image: 'simon-maris'
-	},
-
-	{
-		name: 'Emily Saltz',
-		subtitle: 'UX Google Jigsaw',
-		description: `Emily Saltz is a UX Researcher at Google Jigsaw, working on tools for platforms and moderators to address online harms. Before that, she was a UX Researcher at the New York Times R&D Lab, conducting research on topics ranging from media credibility (the News Provenance Project), to NLP Q&A tools. She was a 2020 Fellow at the Partnership on AI studying manipulated and synthetic media, where she co-authored "The Responsible AI Art Field Guide." She holds a Master’s in Computer-Interaction from Carnegie Mellon, and a BA in Linguistics from UC Santa Cruz, and is Part-Time Faculty in Design & Technology at Parsons.`,
-		image: 'emily-saltz'
-	},
-	{
-		name: 'Tom White',
-		subtitle: 'Artist & Researcher',
-		description: `Tom White (dribnet) is a New Zealand based artist investigating machine perception. His current work focuses on creating physical artworks that highlight how machines “see” and thus how they think, suggesting that these systems are capable of abstraction and conceptual thinking. He has exhibited computer based artwork internationally over the past 25 years with themes of artificial intelligence, interactivity, and computational creativity. He is currently a lecturer and researcher at University of Wellington School of Design where he teaches students the creative potential of computer programming and artificial intelligence.`,
-		image: 'tom-white'
+		name: 'TBA',
+		subtitle: 'XXX',
+		description: `XXX`,
+		image: 'julian-oliver'
 	},
 	{
 		name: 'Andreas Refsgaard',
-		subtitle: 'Artist',
-		description: `Andreas Refsgaard is an artist and creative coder based in Copenhagen. Working in the field between art and interaction design he uses algorithms, coding and machine learning to explore the creative potentials of emerging digital technologies.
-		His works have been published in New Scientist, Vice, Gizmodo, PSFK and Designboom, awarded by Interaction Awards and Core77 and exhibited in museums and at festivals in Europe, North America, Asia and Australia.`,
+		subtitle: 'Beyond prompting - silly interactive AI',
+		description: `What happens when generative AI art meets interaction design? Through fun and artistic examples Andreas encourages his audience to contemplate and discuss the abounding potentials as well as ethical dilemmas which are becoming increasingly relevant with the growing influence of digital technologies in our everyday lives.`,
+		bio: `Andreas Refsgaard is an artist and creative coder based in Copenhagen. Andreas applies a humorous approach to the digital tools and their potential applications, purposes and values. His works often consists of imaginative and unconventional combinations of inputs and outputs allowing people to e.g. play music using eye-movement, generate memes or fake wikipedia pages from photos or transforming drawings of musical instruments into real compositions. His playful, wacky and often interactive works are characterised by a naive and openminded approach, which questions and exposes both the possible benefits and drawbacks of the applied technologies in a straightforward and unassuming manner.`,
 		image: 'andreas-refsgaard'
 	},
 	{
-		name: 'Norbert Riedelsheimer',
-		subtitle: 'IBM Client Engineering',
-		description: `Norbert Riedelsheimer is working as global Design Program Director at IBM Client Engineering, a business unit that leverages cutting edge AI and Cloud Technologies in interdisciplinary squad teams to innovative with IBMs most important clients.
-		As regulations like the EU AI-Act are on the horizon, clients from industries like banking, insurance, industrial, distribution and the public sector are interested in AI-solutions that are trustworthy, explainable and fair.
-		Norbert thinks that we as designers need to even push beyond that and have the power to maximize the positive impact of AI Technologies by applying them in context of the worlds bigger challenges.`,
-		image: 'norbert-riedelsheimer'
+		name: 'Tobias Revell',
+		subtitle: 'Design and the Social Construction of Artificial Intelligence',
+		description: `As futures are increasingly foreclosed by dominant tech narratives of power, speed, efficiency and consumption it's increasingly important to question the role of design in constructing and telling these stories. This talk addresses some of the strategies and techniques used in constructing future imaginaries of AI through design and explores ways in which the critical practice of design can be used to challenge, problematise and reveal these dominant narratives as well as propose alternatives.`,
+		bio: `Tobias Revell is an artist, designer, researcher and educator from London specialising in futures and technology through critical practice. He is Design Futures Lead at Arup where he leads the Foresight team in delivering large-scale strategic futures and sustainability projects for internal and external clients and developing futures literacy across the firm. He specialises in the use of design approaches to deepen engagement, enhance the quality of outcomes and question underlying assumptions in tackling complex problems. He exhibits, writes and lectures internationally on futures, art, design, technology and imagination.`,
+		image: 'tobias-revell'
 	},
 	{
-		name: 'Team Prompt Battle',
-		subtitle: 'HTW Dresden',
-		description: `Prompt Battle Delegation: Bernadette Geiger & Ella Zickerick <br/><br/> Prompt Battle is a live event where people compete against each other using text-to-image software. Show off your prompt skills and maybe the audience will choose you as the winner who elicited the most surprising, disturbing or beautiful images from the latent spaces of DALL·E 2, Stable Diffusion, Midjourney, Craiyon, etc. <br/><br/>The Prompt Battle format was developed by Florian A. Schmidt & Sebastian Schmieg with the design students at HTW Dresden: Bernadette Geiger, Ella Zickerick, Emily Krause, Levi Stein, Lina Schwarzenberg, Robert Hellwig`,
-		image: 'prompt-battle'
+		name: 'Eryk Salvaggio',
+		subtitle: 'Feel the Noise: Notes from an Adversarial AI Artist',
+		description: `Eryk Salvaggio's artworks use AI to work against AI. Favoring an adversarial, rather than "collaborative" position, creates ways of "removing the imagination" of what AI is, in order to see the truth of what it does and is more clearly. Beyond simple opposition, this practice creates opportunities for more nuanced claims about what defines the human when it is removed from the isolating context of rationality, efficiency, and productivity.`,
+		bio: `Eryk Salvaggio is a blend of artist, hacker, and policy researcher. He is a visiting professor at the Rochester Institute of Technology in Humanities, Computation and Design; a research at the metaLAB at Harvard University, an emerging technology research advisor to the Siegel Family Endowment, a writing fellow with Tech Policy Press, and a Gates Scholar pursuing a PhD in Digital Humanities at the University of Cambridge. He is the curator of "Signal to Noise" at the National Communications Museum in Melbourne, blending contemporary and historical artworks and instruments that reframe epistemologies of noise.`,
+		image: 'eryk-salvaggio'
 	}
 ];
