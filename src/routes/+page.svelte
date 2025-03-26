@@ -4,7 +4,7 @@
 	import ITEMS_FRIDAY from '../data/schedule-friday.js';
 	import WORKSHOPS from '../data/workshops.js';
 
-	import Animation from '$lib/animation-25/Animation.svelte';
+	import Animation from '$lib/animation-26/Animation.svelte';
 	import MenuIcon from '$lib/icon-menu.svelte';
 	import LabLogo from '$lib/lab-logo-weiss.svelte';
 	import SpeakersDesktop from '$lib/speakers-desktop.svelte';
