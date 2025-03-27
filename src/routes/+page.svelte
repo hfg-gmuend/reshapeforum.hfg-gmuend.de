@@ -33,6 +33,7 @@
 	const menuItems = [
 		{ title: 'Speakers', link: '#speakers' },
 		{ title: 'Schedule', link: '#program' },
+		{ title: 'Location', link: '#location' },
 		{ title: 'Tickets', link: 'https://www.eventbrite.com/e/reshape-2025-tickets-1251085563599' }
 		// { title: 'AI+D Lab', link: '#ai-d-lab' },
 		//{ title: 'KITeGG', link: '#kitegg' },
@@ -197,6 +198,32 @@
 				<div class="max-md:hidden md:visible">
 					<SpeakersDesktop />
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="location">
+		<div class="md:grid md:grid-cols-3 gap-10 pt-[80px] md:pt-[150px]" id="ai-d-lab">
+			<div>
+				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[40px] text-4xl inline-block">
+					Location
+				</h2>
+			</div>
+			<div class="md:col-span-2">
+				<p class="reshape-copy">
+					Hochschule für Gestaltung Schwäbisch Gmünd<br />
+					University of Applied Sciences<br />
+					Rektor-Klaus-Straße 100<br />
+					73525 Schwäbisch Gmünd<br />
+					<a
+						class="block reshape-link mt-[25px] md:mt-0"
+						href="https://goo.gl/maps/FCYPLeJzBLvpGkQNA"
+						target="_blank"
+						rel="noopener noreferrer">Google Maps</a
+					>
+					<br />
+					Room: H2.10 (Aula) floor 2
+				</p>
 			</div>
 		</div>
 	</section>
