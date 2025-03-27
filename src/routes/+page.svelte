@@ -164,7 +164,7 @@
 			<div class="md:col-span-2">
 				<!-- Heading -->
 				<h1 class="text-5xl md:text-6xl leading-tight mb-12 text-gray-900">
-					How can we reshape AI’s role in art, design, and beyond!
+					How can we <span class="inline-block -scale-x-100">re</span> shape AI’s role in art, design, and beyond!
 				</h1>
 
 				<!-- Content Columns -->
@@ -306,7 +306,7 @@
 		<div class="md:grid md:grid-cols-3 gap-10 pt-[80px] md:pt-[150px]" id="ai-d-lab">
 			<div>
 				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[40px] text-4xl inline-block">
-					AI+D Lab
+					<a href="https://aid-lab.hfg-gmuend.de" target="_blank" rel="noopener noreferrer">AI+D Lab</a>
 				</h2>
 			</div>
 			<div class="md:col-span-2">
