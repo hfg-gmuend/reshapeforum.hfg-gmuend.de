@@ -182,7 +182,7 @@
 		</div>
 	</section>
 
-	<section id="speakers" class="mt-3">
+	<section id="speakers" class="md:pt-[100px] pt-16">
 		<div class="md:grid md:grid-cols-3 gap-10">
 			<div>
 				<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[25px] text-4xl inline-block">
@@ -228,7 +228,7 @@
 		</div>
 	</section>
 
-	<section id="program" class="md:mt-[100px] mt-10">
+	<section id="program" class="md:pt-[100px] pt-16">
 		<div>
 			<h2 class="bg-[#6a5b9e] px-6 py-3 rounded-xl text-white mb-[40px] text-4xl inline-block">
 				Schedule
