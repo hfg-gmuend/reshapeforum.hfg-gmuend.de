@@ -5,7 +5,25 @@
   let width = 1000;
   let bannerEl;
   let blobY = 0;
-  const offsetY = -280; // 🎯 Wieviel höher als das Banner die Blobs sitzen
+
+  // 📏 Bestimme Offset je nach Bildschirmgröße
+  function getResponsiveOffset() {
+  const w = window.innerWidth;
+
+  const minW = 480;
+  const maxW = 1440;
+
+  const minOffset = -200;
+  const maxOffset = -520;
+
+  // Clamp w zwischen minW und maxW
+  const clamped = Math.min(Math.max(w, minW), maxW);
+
+  // Interpolieren zwischen den Werten
+  const t = (clamped - minW) / (maxW - minW); // 0 → 1
+  return minOffset + t * (maxOffset - minOffset);
+}
+
 
   function updateWidth() {
     width = window.innerWidth * 0.4;
@@ -13,11 +31,12 @@
   }
 
   function updateBlobPosition() {
-    if (bannerEl) {
-      const rect = bannerEl.getBoundingClientRect();
-      blobY = rect.top + rect.height / 2 + offsetY;
-    }
+  if (bannerEl) {
+    const rect = bannerEl.getBoundingClientRect();
+    blobY = rect.top + rect.height / 2 + getResponsiveOffset();
   }
+}
+
 
   onMount(() => {
     updateWidth();
@@ -67,6 +86,7 @@
     width: 70%;
     height: 120vh;
     pointer-events: none;
+    transition: top 0.3s ease; /* smooth move */
   }
 
   .blob-left {
