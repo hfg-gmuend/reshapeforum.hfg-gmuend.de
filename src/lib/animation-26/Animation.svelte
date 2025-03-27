@@ -2,18 +2,34 @@
   import { onMount, onDestroy } from "svelte";
   import Blob from './Blob.svelte';
 
-  let width = 1000; // Standardwert für die Breite
+  let width = 1000;
+  let bannerEl;
+  let blobY = 0;
+  const offsetY = -280; // 🎯 Wieviel höher als das Banner die Blobs sitzen
 
-  // Funktion zur Berechnung der Breite basierend auf der Fenstergröße
   function updateWidth() {
-    width = window.innerWidth * 0.4; // 40% der Fensterbreite
+    width = window.innerWidth * 0.4;
     document.documentElement.style.setProperty('--blob-width', `${width}px`);
+  }
+
+  function updateBlobPosition() {
+    if (bannerEl) {
+      const rect = bannerEl.getBoundingClientRect();
+      blobY = rect.top + rect.height / 2 + offsetY;
+    }
   }
 
   onMount(() => {
     updateWidth();
-    window.addEventListener("resize", updateWidth);
-    onDestroy(() => window.removeEventListener("resize", updateWidth));
+    updateBlobPosition();
+    window.addEventListener("resize", () => {
+      updateWidth();
+      updateBlobPosition();
+    });
+
+    onDestroy(() => {
+      window.removeEventListener("resize", updateWidth);
+    });
   });
 </script>
 
@@ -22,10 +38,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: auto;
+    overflow: hidden;
   }
 
   .banner {
@@ -35,68 +48,69 @@
     transform: translate(-50%, -50%);
     width: 25%;
     max-width: 80vw;
-    z-index: 3; /* Banner sollte vor den Blobs sein */
+    z-index: 3;
   }
 
   .blob-container {
     position: absolute;
-    top: 50%;
-    left: 48%;
-    transform: translate(-50%, -50%);
     width: 100%;
-    height: 100%; /* Blobs füllen den Container aus */
-    z-index: 2; /* Blobs sind hinter dem Banner */
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
   }
 
-  .blob-left, .blob-right {
+  .blob-left,
+  .blob-right {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50%;
-
+    width: 70%;
+    height: 120vh;
+    pointer-events: none;
   }
 
   .blob-left {
-    left: 10%; /* Linke Blob-Position anpassen */
-    z-index: 1; /* Blobs sind hinter dem Banner */
-
+    left: 25%;
   }
 
   .blob-right {
-    left: 36%; /* Rechte Blob-Position anpassen */
-    z-index: 0; /* Blobs sind hinter dem Banner */
-
+    right: 25%;
   }
 
   @media (max-width: 768px) {
-    .blob-left, .blob-right {
-      width: 35%; /* Kleinere Blobs für kleinere Bildschirme */
-      height: 45vh;
+    .banner {
+      width: 40%;
+    }
+
+    .blob-left,
+    .blob-right {
+      width: 90%;
+      height: 90vh;
     }
   }
 
   @media (max-width: 480px) {
-    .blob-left, .blob-right {
-      width: 50%; /* Noch kleinere Blobs für sehr kleine Bildschirme */
-      height: 40vh;
+    .banner {
+      width: 50%;
+    }
+
+    .blob-left,
+    .blob-right {
+      width: 100%;
+      height: 70vh;
     }
   }
 </style>
 
-
 <div class="fullscreen-center">
-  <img src="banner-font.png" alt="Banner" class="banner" />
+  <img src="banner-font.png" alt="Banner" class="banner" bind:this={bannerEl} />
 
-  <!-- Blob-Container hinter dem Banner -->
   <div class="blob-container">
-    <!-- Linke Animation (Blob) -->
-    <div class="blob-left">
-      <Blob class="blob" mirrorY={true} {width} />
+    <div class="blob-left" style="top: {blobY}px;">
+      <Blob mirrorY={true} />
     </div>
-
-    <!-- Rechte Animation (Blob) -->
-    <div class="blob-right">
-      <Blob class="blob" mirrorY={false} {width} />
+    <div class="blob-right" style="top: {blobY}px;">
+      <Blob mirrorY={false} />
     </div>
   </div>
 </div>

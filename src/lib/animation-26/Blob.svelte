@@ -12,10 +12,11 @@
   let transitionSpeed = 0.005;
   let lastShapes = new Set();
 
-  let color = "rgba(80, 100, 255, 0.4)";  // Initialfarbe für den Farbverlauf
-  let colorChangeInterval = 7000;  // Zeit in Millisekunden, nach der die Farbe wechselt (7 Sekunden)
-  let lastColorChangeTime = 10; // Zeitstempel des letzten Farbwechsels
+  let color = "rgba(80, 100, 255, 0.4)";
+  let colorChangeInterval = 7000;
+  let lastColorChangeTime = 10;
 
+  // Shapes mit fixer Y-Mitte
   const shapes = {
     tallRectangle: createRectangle(225, 495),
     fatCylinder: createCylinder(225, 180),
@@ -23,27 +24,27 @@
     flatCylinder: createCylinder(270, 67.5),
     circle: createCircle(225),
     diamond: createDiamond(315),
-    hexagon: createPolygon(13,5, 225),
+    hexagon: createPolygon(13, 5, 225),
     barrel: createBarrelShape(225, 405),
     squishedCircle: createSquishedCircle(315, 225),
     wonkyHexagon: createWonkyHexagon()
   };
 
-  // Diese Funktion wird verwendet, um eine zufällige Farbe zu erzeugen
   function updateColor() {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
-    color = `rgba(${r}, ${g}, ${b}, 20.4)`;  // Neue Farbe setzen
+    color = `rgba(${r}, ${g}, ${b}, 0.4)`;
   }
 
-  // Alle Shape-Erstellungsfunktionen
+  const yBase = 360; // feste vertikale Mitte im SVG
+
   function createCircle(radius) {
     return Array.from({ length: 32 }, (_, i) => {
       const angle = (i / 32) * Math.PI * 2;
       return {
         x: 325 + Math.cos(angle) * radius,
-        y: 360 + Math.sin(angle) * radius,
+        y: yBase + Math.sin(angle) * radius,
         z: 0
       };
     });
@@ -52,20 +53,20 @@
   function createRectangle(width, height) {
     const halfW = width / 2, halfH = height / 2;
     return [
-      { x: 325 - halfW, y: 360 - halfH, z: 0 },
-      { x: 325 + halfW, y: 360 - halfH, z: 0 },
-      { x: 325 + halfW, y: 360 + halfH, z: 0 },
-      { x: 325 - halfW, y: 360 + halfH, z: 0 }
+      { x: 325 - halfW, y: yBase - halfH, z: 0 },
+      { x: 325 + halfW, y: yBase - halfH, z: 0 },
+      { x: 325 + halfW, y: yBase + halfH, z: 0 },
+      { x: 325 - halfW, y: yBase + halfH, z: 0 }
     ];
   }
 
   function createDiamond(size) {
     const h = size / 2;
     return [
-      { x: 325, y: 360 - h, z: 0 },
-      { x: 325 + h, y: 360, z: 0 },
-      { x: 325, y: 360 + h, z: 0 },
-      { x: 325 - h, y: 360, z: 0 }
+      { x: 325, y: yBase - h, z: 0 },
+      { x: 325 + h, y: yBase, z: 0 },
+      { x: 325, y: yBase + h, z: 0 },
+      { x: 325 - h, y: yBase, z: 0 }
     ];
   }
 
@@ -76,7 +77,7 @@
       const angle = (i / steps) * Math.PI * 2;
       return {
         x: 325 + Math.cos(angle) * radius,
-        y: 360 + Math.sin(angle) * halfH,
+        y: yBase + Math.sin(angle) * halfH,
         z: Math.sin(angle) * radius
       };
     });
@@ -87,7 +88,7 @@
       const angle = (i / sides) * Math.PI * 2;
       return {
         x: 325 + Math.cos(angle) * radius,
-        y: 360 + Math.sin(angle) * radius,
+        y: yBase + Math.sin(angle) * radius,
         z: 0
       };
     });
@@ -101,7 +102,7 @@
       const radius = topRadius * (1 + curve * Math.sin(angle));
       return {
         x: 325 + Math.cos(angle) * radius,
-        y: 360 + Math.sin(angle) * radius,
+        y: yBase + Math.sin(angle) * radius,
         z: 0
       };
     });
@@ -115,7 +116,7 @@
       const w = i < steps / 2 ? topW : botW;
       points.push({
         x: 325 + Math.cos(angle) * w / 2,
-        y: 360 + Math.sin(angle) * 80,
+        y: yBase + Math.sin(angle) * 80,
         z: 0
       });
     }
@@ -128,7 +129,7 @@
       const wobble = i % 2 === 0 ? 1.1 : 0.9;
       return {
         x: 325 + (p.x - 325) * wobble,
-        y: 360 + (p.y - 360) * wobble,
+        y: yBase + (p.y - yBase) * wobble,
         z: 0
       };
     });
@@ -196,7 +197,6 @@
     return selected;
   }
 
-  // Aktualisierung des Farbwechsels alle 7 Sekunden
   function checkColorChange() {
     const now = Date.now();
     if (now - lastColorChangeTime >= colorChangeInterval) {
@@ -213,7 +213,7 @@
       nextShape = getRandomShape();
     }
     updateShape();
-    checkColorChange();  // Überprüfen, ob die Farbe geändert werden soll
+    checkColorChange();
     animationFrame = requestAnimationFrame(animate);
   }
 
@@ -238,22 +238,19 @@
       <filter id="inset-blur" x="-50%" y="-50%" width="200%" height="200%">
         <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur" />
         <feComposite in="SourceAlpha" in2="blur" operator="out" result="inset" />
-        <feFlood flood-color={color} result="flood" /> <!-- Dynamische Farbe hier -->
+        <feFlood flood-color={color} result="flood" />
         <feComposite in="flood" in2="inset" operator="in" result="shadow" />
         <feComposite in="shadow" in2="SourceGraphic" operator="over" />
       </filter>
     </defs>
-
-    <path d={pathString} fill="white" filter="url(#inset-blur)" stroke="none" style="stroke-linejoin: round; stroke-linecap: round;" />
+    <path d={pathString} fill="white" filter="url(#inset-blur)" stroke="none" />
   </svg>
 </div>
 
 <style>
   svg {
-    /* background: rgb(255, 255, 255); */
     display: block;
   }
-
   path {
     transition: all 0.3s ease;
   }
