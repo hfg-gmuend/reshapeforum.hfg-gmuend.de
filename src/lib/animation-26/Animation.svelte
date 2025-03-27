@@ -11,10 +11,10 @@
   const w = window.innerWidth;
 
   const minW = 480;
-  const maxW = 1440;
+  const maxW = 3600;
 
   const minOffset = -200;
-  const maxOffset = -520;
+  const maxOffset = -1320;
 
   // Clamp w zwischen minW und maxW
   const clamped = Math.min(Math.max(w, minW), maxW);
