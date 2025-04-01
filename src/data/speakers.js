@@ -8,7 +8,7 @@ export default [
 	{
 		name: 'Niko Klein',
 		subtitle: 'Lighting a fire with damp wood.',
-		description: `Niko is going to talk about how the role of prototyping is changing alongside recent and future developments in AI.`,
+		description: `After graduating in 2017 from the HfG Schwäbisch Gmünd, Niko has worked since 2018 on Figma’s editor, with a constant focus on prototyping features.`,
 		image: 'niko-klein'
 	},
 	{
@@ -20,7 +20,7 @@ export default [
 	{
 		name: 'Niklas Muhs',
 		subtitle: 'How Do We Want to Interface With AI?',
-		description: `After graduating in 2017 from the HfG Schwäbisch Gmünd, Niko has worked since 2018 on Figma’s editor, with a constant focus on prototyping features.`,
+		description: `Niklas Muhs is a designer focused on creating new ways for people to interact with AI. As the first designer at Mistral AI, he shaped experiences tailored to consumers, developers, and scientists, collaborating closely with researchers to explore AI interactions. Previously, he conducted research at the MIT Media Lab’s Fluid Interfaces group and the AI+D Lab, bridging AI, design, and cognitive science. At Intuity, Niklas designed and developed AI systems for large-scale enterprises, exploring the boundaries of applied AI in industry contexts.`,
 		image: 'niklas-muhs'
 	},
 	{
