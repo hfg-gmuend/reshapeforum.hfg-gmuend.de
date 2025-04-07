@@ -13,6 +13,7 @@
   export let ultraHD = false; // New parameter to enable even higher resolution
   export let lineColor = "#FFFFFF";  // New parameter for stroke color
   export let backgroundSvg = ''; // URL to SVG instead of SVG content
+  export let backgroundSvg2 = ''; // Second background SVG
   
   // Canvas setup - smaller base size for more control
   let canvas;
@@ -1116,8 +1117,14 @@
 </script>
 
 <div class="animation-container" style="background-color: {backgroundColor}">
+  {#if backgroundSvg2}
+    <div class="background-svg background-svg-back">
+      <img src={backgroundSvg2} alt="" aria-hidden="true" />
+    </div>
+  {/if}
+
   <canvas bind:this={canvas} width={width} height={height} class="animation-canvas"></canvas>
-  
+
   {#if backgroundSvg}
     <div class="background-svg">
       <img src={backgroundSvg} alt="" aria-hidden="true" />
@@ -1146,8 +1153,22 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
     filter: drop-shadow(0 0 8px rgba(154, 134, 217, 0.15));
+  }
+
+  .background-svg-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    pointer-events: none;
   }
 
   .background-svg {

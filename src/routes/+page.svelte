@@ -14,6 +14,7 @@
 	import Schedule from '$lib/schedule.svelte';
 	// import AnimationMovieMP4 from '$lib/assets/reshape_8_1.mp4';
 	import reshapeSvgUrl from '$lib/3d-math-shapes/reshape.svg?url';
+	import backgroundSvgUrl from '$lib/3d-math-shapes/background.svg?url';
 
 	let menuOpen = false;
 
@@ -115,6 +116,7 @@
 				performanceMode={true}
 				ultraHD={true}
 				backgroundSvg={reshapeSvgUrl}
+				backgroundSvg2={backgroundSvgUrl}
 			/>
 		</div>
 		<!-- End of Desktop Animation -->
