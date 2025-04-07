@@ -4,7 +4,7 @@
 	import ITEMS_FRIDAY from '../data/schedule-friday.js';
 	import WORKSHOPS from '../data/workshops.js';
 
-	import Animation from '$lib/animation-26/Animation.svelte';
+	import Animation from '$lib/3d-math-shapes/index.js';
 	import MenuIcon from '$lib/icon-menu.svelte';
 	import LabLogo from '$lib/lab-logo-weiss.svelte';
 	import SpeakersDesktop from '$lib/speakers-desktop.svelte';
@@ -13,6 +13,7 @@
 	import Logos from '$lib/logos.svelte';
 	import Schedule from '$lib/schedule.svelte';
 	// import AnimationMovieMP4 from '$lib/assets/reshape_8_1.mp4';
+	import reshapeSvgUrl from '$lib/3d-math-shapes/reshape.svg?url';
 
 	let menuOpen = false;
 
@@ -103,8 +104,19 @@
 
 <main class=" inset">
 	<div class="pt-11 inset-negative w-screen h-screen">
-		<!-- Desktop Animation -->
-		<div class="absolute top-0 right-0 left-0 bottom-0"><Animation /></div>
+		<div class="animation-wrapper translate-y-[-3vh]">
+			<Animation 
+				shapeColor="#6D59A2" 
+				lineColor="#FFFFFF"
+				backgroundColor="transparent" 
+				scale={0.7} 
+				highResolution={true}
+				superSample={2.5}
+				performanceMode={true}
+				ultraHD={true}
+				backgroundSvg={reshapeSvgUrl}
+			/>
+		</div>
 		<!-- End of Desktop Animation -->
 		<!-- <div class="animation-fallback-gif absolute top-0 right-0 left-0 bottom-0 md:hidden">
 			<video autoplay="true" loop="true" contols>
@@ -568,5 +580,18 @@
 
 	.floating4 {
 		animation: floating4 14s ease-in-out infinite;
+	}
+
+	/* Style for the animation wrapper */
+	.animation-wrapper {
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		z-index: -1;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		pointer-events: none; /* Allow clicking through the animation */
 	}
 </style>
