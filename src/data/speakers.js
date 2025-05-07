@@ -12,6 +12,12 @@ export default [
 		image: 'niko-klein'
 	},
 	{
+		name: 'Sures Kumar',
+		subtitle: 'Reframing Creative Practice',
+		description: `Sures Kumar is a designer and creative technologist, specializing in artificial intelligence. He currently works at Google DeepMind focusing on designing for AI. Previously, he has led projects like Responsible Gen AI, Quantum AI, TensorFlow, Coral, AIY Projects, next gen Google Lens and has also contributed to Google Pixel Camera, Android AI, Google Play and G Suites. Prior to Google, Sures worked at Meta, Microsoft and Local Projects where he designed Meta AI tools, Microsoft Office Mobile and interactive museum installations. Sures’s works have been exhibited internationally, referenced in academic publications and featured in surfaces such as Wired, The Verge, FastCoDesign, Core77, Business Insider and Arduino.`,
+		image: 'sures-kumar'
+	},
+	{
 		name: 'Maria Luce Lupetti',
 		subtitle: 'Drawing windows into better timelines',
 		description: `Maria Luce Lupetti is an Assistant Professor in Interaction and Critical Design at the Department of Architecture and Design at Politecnico di Torino. Her research is concerned with all matters of human entanglement with the artificial world, especially concerning complex technologies such as AI and robotics. She is the PI of "Participatory Design Justice for Ethical AI Transitions'' a three-year project funded by the Italian Ministry of Education and Research, under the FIS2 program. She also serves as Exhibit X section editor for ACM Interactions Mag.`,
@@ -29,12 +35,6 @@ export default [
 		description: `Iohanna Nicenboim is a postdoctoral researcher at Delft University of Technology, where she completed her PhD with honors as a Microsoft Research Fellow. Her current research explores Regenerative AI and More-than-Human Design sensibilities. Over the past eight years, she has developed a More-than-Human Design approach to AI (Designing-with AI), publishing extensively in international journals and organizing workshops and panels at leading conferences. She also co-edited a special issue of the HCI Journal on the More-than-Human Turn in Design. With a multidisciplinary career spanning art, design, industry, and academia, Iohanna brings a unique perspective to the intersection of technology and more-than-human interactions.`,
 		image: 'iohanna-nicenboim'
 	},
-	// {
-	// 	name: 'TBA',
-	// 	subtitle: 'XXX',
-	// 	description: `XXX`,
-	// 	image: 'julian-oliver'
-	// },
 	{
 		name: 'Andreas Refsgaard',
 		subtitle: 'Beyond prompting - silly interactive AI',

@@ -7,9 +7,9 @@ export default [
 	},
 	{
 		timeslot: '09:30-10:30',
-		title: 'TBA',
-		subtitle: '',
-		description: ``
+		title: 'Sures Kumar',
+		subtitle: 'Reframing Creative Practice',
+		description: `The interplay between artificial intelligence and human creativity continues to provoke important questions across academic, artistic, and design communities. In this talk, Sures will present a case study drawn from his own practice, in which AI is embedded throughout the entire Speculative Design process—resulting in a fully autonomous engine for generating speculation design projects. Building on this project, he will introduce a conceptual and practical framework to support the intentional and critical integration of AI into creative methodologies.`
 	},
 	{
 		timeslot: '10:30-11:00',
