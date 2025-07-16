@@ -17,6 +17,6 @@
 		display: block;
 		background-size: contain;
 		background-repeat: no-repeat;
-		max-height: 50px;
+		max-height: 80px;
 	}
 </style>
