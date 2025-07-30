@@ -78,10 +78,10 @@
 	.speaker-andreas-refsgaard {
 		background-image: url($lib/assets/speaker-portraits/andreas-refsgaard.jpg);
 	}
-	/* 
-	.speaker-julian-oliver {
-		background-image: url($lib/assets/speaker-portraits/julian-oliver.jpg);
-	} */
+	
+	.speaker-sures-kumar {
+		background-image: url($lib/assets/speaker-portraits/sures-kumar.jpg);
+	}
 
 	.speaker-iohanna-nicenboim {
 		background-image: url($lib/assets/speaker-portraits/iohanna-nicenboim.jpg);
