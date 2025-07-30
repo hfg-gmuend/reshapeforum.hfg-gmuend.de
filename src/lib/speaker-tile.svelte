@@ -4,6 +4,7 @@
 	export let description = '';
 	export let tint = 'reshape-blau';
 	export let imageName = '';
+	export let youtube = '';
 </script>
 
 <div class="reshape-copy pr-4">
@@ -20,8 +21,14 @@
 		</div>
 	</div>
 
-	<h3 class="mt-[25px] md:mt-[15px] block reshape-lead-light">{name}</h3>
-	<h4 class="reshape-copy max-md:max-w-[70vw]">{subtitle}</h4>
+<h3 class="mt-[25px] md:mt-[15px] block reshape-lead-light">{name}</h3>
+<h4 class="reshape-copy max-md:max-w-[70vw]">
+	{#if youtube}
+		<a href={youtube} target="_blank" rel="noopener noreferrer" class="reshape-link">{subtitle}</a>
+	{:else}
+		{subtitle}
+	{/if}
+</h4>
 	<p class="reshape-copy mt-4 md:mt-0 max-md:max-w-[70vw]">
 		{@html description}
 	</p>

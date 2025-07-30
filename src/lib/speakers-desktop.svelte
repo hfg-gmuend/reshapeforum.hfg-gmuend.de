@@ -43,12 +43,13 @@
 				class:cursor-pointer={idx(rowIndex, colIndex) !== expandedIndex}
 				on:click={() => toggle(idx(rowIndex, colIndex))}
 			>
-				<SpeakerTile
-					tint={idx(rowIndex, colIndex) !== expandedIndex && 'reshape-lila'}
-					name={item.name}
-					subtitle={item.subtitle}
-					imageName={item.image}
-				/>
+<SpeakerTile
+	tint={idx(rowIndex, colIndex) !== expandedIndex && 'reshape-lila'}
+	name={item.name}
+	subtitle={item.subtitle}
+	imageName={item.image}
+	youtube={item.youtube}
+/>
 			</div>
 		{/each}
 		<div class="col-span-full md:-my-[65px]" class:hidden={!isPartOfRow(expandedIndex, rowIndex)}>
