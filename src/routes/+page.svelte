@@ -339,7 +339,7 @@
 					up sound knowledge about the possibilities and limitations of this technology. As a
 					physical location, the lab is the first point of contact for students and teachers and
 					provides the technical infrastructure for projects and experiments with different AI
-					models and technologies. The AI+D Lab is part of KITeGG.
+					models and technologies. The AI+D Lab is part of KITeGG. <b><a href="https://aid-lab.hfg-gmuend.de/appearances/2025-reshape-summer-school-hfg-schwaebisch-gmuend/" target="_blank" rel="noopener noreferrer">Check out our blog post on the <span class="inline-block -scale-x-100">re</span> shape Forum!</a></b>
 				</p>
 			</div>
 		</div>
