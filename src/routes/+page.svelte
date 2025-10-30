@@ -105,6 +105,8 @@
 
 <main class=" inset">
 	<div class="pt-11 inset-negative w-screen h-screen">
+		<!-- Animation replaced by banner image -->
+		<!--
 		<div class="animation-wrapper translate-y-[-3vh]">
 			<Animation 
 				shapeColor="#6D59A2" 
@@ -118,6 +120,10 @@
 				backgroundSvg={reshapeSvgUrl}
 				backgroundSvg2={backgroundSvgUrl}
 			/>
+		</div>
+		-->
+		<div class="banner-wrapper w-full h-full flex items-center justify-center">
+			<img src="/banner.png" alt="re shape forum banner" class="w-full h-auto object-cover" />
 		</div>
 		<!-- End of Desktop Animation -->
 		<!-- <div class="animation-fallback-gif absolute top-0 right-0 left-0 bottom-0 md:hidden">
